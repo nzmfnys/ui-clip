@@ -30,17 +30,158 @@ html(lang="ja")
       (window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));
     script(src="js/scripts.js")
 
-    h1 H1 Title dd
-    h2 H2 Title 
-    h3 H3 Titlessss
-    p text
-    ul 
-      li List
-      li List
-      li List
-      li List
-    ol 
-      li List
-      li List
-      li List
-      li List
+
+    //- ヘッダー
+    //- ロゴ
+    //- ナビゲーション
+    header.header-inner
+      ul.header-inner__navi
+        li.header-inner__logo
+          img(src="/assets/common/logo.svg" alt="UICLIP") 
+        li
+          ul.header-inner__menu
+            li.header-inner__menu-item About
+            li.header-inner__menu-item Category
+            li.header-inner__menu-item Blog
+            li.header-inner__menu-item Books
+      
+
+    //- SP/PC切り替えボタン　コンテンツエリア
+    section.content-inner
+      div.tab-wrap
+        //- スマートフォンサムネルブロック
+        input.tab-wrap__switch(type="radio" id="TAB-01" checked="checked" name="TAB")
+        label.tab-wrap__label(for="TAB-01")
+        //- サービスエリア 
+        div.tab-wrap__content
+          //-　サービス情報
+          dl
+            dt 
+              //-　アイコン
+              img(src="/assets/app/icon-soundcloud.svg")
+              //-　サービス名称
+              h2 SoundCloud
+            
+            //-　コピーライト
+            dd © SoundCloud Global Limited & Co KG
+
+          //-　画像
+          ul 
+            li
+              img(src="/assets/app/img01-soundcloud.png" alt="SoundCloud")
+            li
+              img(src="/assets/app/img02-soundcloud.png" alt="SoundCloud")
+            li
+              img(src="/assets/app/img03-soundcloud.png" alt="SoundCloud")
+            li
+              img(src="/assets/app/img04-soundcloud.png" alt="SoundCloud")
+            li
+              img(src="/assets/app/img05-soundcloud.png" alt="SoundCloud")
+            li
+              img(src="/assets/app/img06-soundcloud.png" alt="SoundCloud")
+
+
+          dl
+            dt 
+              //-　アイコン
+              img(src="")
+              //-　サービス名称
+              h2 SoundCloud
+            
+            //-　コピーライト
+            dd © SoundCloud Global Limited & Co KG
+          
+          //-　広告bookエリア
+          div  
+
+          //-　広告バナー
+          div  
+        
+        //- APPサムネルブロック
+        input.tab-wrap__switch(type="radio" id="TAB-02" name="TAB")
+        label.tab-wrap__label(for="TAB-02") 
+        div.tab-wrap__content
+          //-　サービス情報
+          dl
+            dt 
+              //-　アイコン
+              img(src="")
+              //-　サービス名称
+              h2 SoundCloud
+            
+            //-　コピーライト
+            dd © SoundCloud Global Limited & Co KG
+
+          //-　画像
+          ul 
+            li
+              img(src="")
+            li
+              img(src="")
+            li
+              img(src="")
+
+          dl
+            dt 
+              //-　アイコン
+              img(src="")
+              //-　サービス名称
+              h2 SoundCloud2
+            
+            //-　コピーライト
+            dd © SoundCloud Global Limited & Co KG
+          
+          //-　広告bookエリア
+          div  
+
+          //-　広告バナー
+          div 
+
+    //- フッター
+    footer 
+      ul 
+        //- twiter
+        li
+        //- facebook
+        li
+        //- RSS
+        li
+        //- ビール
+        li
+      p ロゴ
+
+            
+
+        
+
+    
+    //- コンテンツエリア
+
+    //- サービスアイコン
+    //- サービス名ロゴ
+    //- サービス名称
+
+    //- サービス画像
+
+    //- 広告エリア1book
+    //- 広告エリアバナー
+
+    //- サービスアイコン
+    //- サービス名ロゴ
+    //- サービス名称
+
+    //- サービス画像
+
+    //- ページネーション
+
+
+    //- 広告エリア1book
+    //- 広告エリアバナー
+
+    //- フッター
+    //- twiter アイコン
+    //- facebook アイコン
+    //- RSS アイコン
+    //- ビール アイコン
+    //- ロゴ
+

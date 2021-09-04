@@ -1,0 +1,129 @@
+
+// FontFamily
+$en-font: 'Crimson Text', serif;
+$jp-font: 'Noto Sans JP', sans-serif;
+
+// JP_PC_headding
+$jp-hedding01: 32px;
+$jp-hedding02: 28px;
+$jp-hedding03: 24px;
+$jp-hedding04: 20px;
+$jp-hedding05: 18px;
+$jp-hedding06: 16px;
+
+// JP_PC_headding
+$jp-sp-hedding01: 26px;
+$jp-sp-hedding02: 24px;
+$jp-sp-hedding03: 22px;
+$jp-sp-hedding04: 20px;
+$jp-sp-hedding05: 18px;
+$jp-sp-hedding06: 16px;
+
+// EN_PC_headding
+$en-hedding01: 40px;
+$en-hedding02: 32px;
+$en-hedding03: 26px;
+$en-hedding04: 22px;
+$en-hedding05: 20px;
+$en-hedding06: 18px;
+
+// EN_SP_headding
+$en-sp-hedding01: 32px;
+$en-sp-hedding02: 26px;
+$en-sp-hedding03: 24px;
+$en-sp-hedding04: 22px;
+$en-sp-hedding05: 20px;
+$en-sp-hedding06: 18px;
+
+body {
+    font-family: $jp-font;
+    color: #333333;
+    background-color: #F7F7F7;
+    font-size: 14px;
+}
+
+// ヘッダー
+
+// .header-inner
+.header-inner {
+    padding: 10px 50px;
+    margin: 0 auto 80px;
+
+    // .header-inner__navi
+    &__navi {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+    }
+    // .header-inner__menu
+    // TODO: バックグランドのシャドウかけかた修正
+    &__menu {
+        display: flex;
+        border-radius: 30px;
+        background-color: #F7F7F7;
+        border: 4px solid #fff;
+        padding: 20px 40px;
+        box-shadow: 2px 6px 6px -2px 0.4;
+
+        // .header-inner__menu-item
+        &-item {
+            &:not(:nth-child(4)){
+            margin-right: 30px;
+            }
+        }
+    }
+}
+
+// メインコンテンツ
+// .content-inner
+.content-inner {
+    max-width: 1540px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+
+//タブラッパー
+.tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    
+    // .tab-wrap__label
+    &__label {
+        color: White;
+        background: LightGray;
+        margin-right: 5px;
+        padding: 3px 12px;
+        order:-1;
+    }
+
+    // .tab-wrap__content
+    &__content {
+        width: 100%;
+        display: none;
+        margin-top: 50px;
+    }
+
+    // .tab-wrap__switch
+    &__switch {
+        display: none;
+        &:checked {
+            &+.tab-wrap__label {
+                background: DeepSkyBlue;
+            }           
+        }   
+    }
+    /* TODO:CSS直す */
+    &__switch {
+        &:checked {
+            &+.tab-wrap__label{
+                &+.tab-wrap__content{
+                    display: block;
+                }
+            }
+        }   
+    }
+}
+
+

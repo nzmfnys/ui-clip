@@ -29,11 +29,11 @@ task('sass', function () {
       .pipe(sass({
         outputStyle: 'expanded'// Minifyするなら'compressed'
       }))
-      .pipe(autoprefixer({
-        browsers: ['ie >= 11'],
-        cascade: false,
-        grid: true
-        }))
+      // .pipe(autoprefixer({
+      //   browsers: ['ie >= 11'],
+      //   cascade: false,
+      //   grid: true
+      //   }))
       .pipe(dest(paths.cssDist))
   );
 });

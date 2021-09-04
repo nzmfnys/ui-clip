@@ -1,0 +1,13 @@
+$sizes: sp, pc;  //冒頭に使うサイズを明記するとわかりやすい
+
+$breakpoint-up: ( 
+  'sp': 'screen and (min-width: 375px)',
+  'pc': 'screen and (min-width: 960px)',
+) !default;
+
+//mixinを定義（初期値はpc）
+@mixin mq-up($breakpoint: pc) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}

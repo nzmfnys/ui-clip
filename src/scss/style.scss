@@ -1,7 +1,12 @@
 @charset "utf-8";
-
 @import "_reset";
-@import "_main";
+@import url(//fonts.googleapis.com/earlyaccess/notosansrunic.css);
+@import url(//fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap);
+@import "_base";
+@import "_mixin";
+
+@import "_module";
+@import "_page";
 
 
 

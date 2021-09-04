@@ -30,21 +30,80 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>(window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));</script>
     <script src="js/scripts.js"></script>
-    <h1>H1 Title dd</h1>
-    <h2>H2 Title </h2>
-    <h3>H3 Titlessss</h3>
-    <p>text</p>
-    <ul> 
-      <li>List</li>
-      <li>List</li>
-      <li>List</li>
-      <li>List</li>
-    </ul>
-    <ol> 
-      <li>List</li>
-      <li>List</li>
-      <li>List</li>
-      <li>List</li>
-    </ol>
+    <header class="header-inner">
+      <ul class="header-inner__navi">
+        <li class="header-inner__logo"><img src="/assets/common/logo.svg" alt="UICLIP"></li>
+        <li>
+          <ul class="header-inner__menu">
+            <li class="header-inner__menu-item">About</li>
+            <li class="header-inner__menu-item">Category</li>
+            <li class="header-inner__menu-item">Blog</li>
+            <li class="header-inner__menu-item">Books</li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <section class="content-inner">
+      <div class="tab-wrap">
+        <input class="tab-wrap__switch" type="radio" id="TAB-01" checked="checked" name="TAB">
+        <label class="tab-wrap__label" for="TAB-01"></label>
+        <div class="tab-wrap__content">
+          <dl>
+            <dt> <img src="/assets/app/icon-soundcloud.svg">
+              <h2>SoundCloud</h2>
+            </dt>
+            <dd>© SoundCloud Global Limited & Co KG</dd>
+          </dl>
+          <ul> 
+            <li><img src="/assets/app/img01-soundcloud.png" alt="SoundCloud"></li>
+            <li><img src="/assets/app/img02-soundcloud.png" alt="SoundCloud"></li>
+            <li><img src="/assets/app/img03-soundcloud.png" alt="SoundCloud"></li>
+            <li><img src="/assets/app/img04-soundcloud.png" alt="SoundCloud"></li>
+            <li><img src="/assets/app/img05-soundcloud.png" alt="SoundCloud"></li>
+            <li><img src="/assets/app/img06-soundcloud.png" alt="SoundCloud"></li>
+          </ul>
+          <dl>
+            <dt> <img src="">
+              <h2>SoundCloud</h2>
+            </dt>
+            <dd>© SoundCloud Global Limited & Co KG</dd>
+          </dl>
+          <div> </div>
+          <div> </div>
+        </div>
+        <input class="tab-wrap__switch" type="radio" id="TAB-02" name="TAB">
+        <label class="tab-wrap__label" for="TAB-02"> </label>
+        <div class="tab-wrap__content">
+          <dl>
+            <dt> <img src="">
+              <h2>SoundCloud</h2>
+            </dt>
+            <dd>© SoundCloud Global Limited & Co KG</dd>
+          </dl>
+          <ul> 
+            <li><img src=""></li>
+            <li><img src=""></li>
+            <li><img src=""></li>
+          </ul>
+          <dl>
+            <dt> <img src="">
+              <h2>SoundCloud2</h2>
+            </dt>
+            <dd>© SoundCloud Global Limited & Co KG</dd>
+          </dl>
+          <div> </div>
+          <div> </div>
+        </div>
+      </div>
+    </section>
+    <footer> 
+      <ul> 
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <p>ロゴ</p>
+    </footer>
   </body>
 </html>
