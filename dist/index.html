@@ -28,8 +28,6 @@
   </head>
   <body>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>(window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));</script>
-    <script src="js/scripts.js"></script>
     <header class="header-inner">
       <ul class="header-inner__navi">
         <li class="header-inner__logo"><img src="/assets/common/logo.svg" alt="UICLIP"></li>
@@ -48,19 +46,19 @@
         <input class="tab-wrap__switch" type="radio" id="TAB-01" checked="checked" name="TAB">
         <label class="tab-wrap__label" for="TAB-01"></label>
         <div class="tab-wrap__content">
-          <dl>
-            <dt> <img src="/assets/app/icon-soundcloud.svg">
-              <h2>SoundCloud</h2>
-            </dt>
-            <dd>© SoundCloud Global Limited & Co KG</dd>
+          <dl class="service-info">
+            <dt><img src="/assets/app/icon-soundcloud.svg"></dt>
+            <dd>
+              <h2 class="service-info__name">SoundCloud</h2><span class="service-info__copy">© SoundCloud Global Limited & Co KG</span>
+            </dd>
           </dl>
-          <ul> 
-            <li><img src="/assets/app/img01-soundcloud.png" alt="SoundCloud"></li>
-            <li><img src="/assets/app/img02-soundcloud.png" alt="SoundCloud"></li>
-            <li><img src="/assets/app/img03-soundcloud.png" alt="SoundCloud"></li>
-            <li><img src="/assets/app/img04-soundcloud.png" alt="SoundCloud"></li>
-            <li><img src="/assets/app/img05-soundcloud.png" alt="SoundCloud"></li>
-            <li><img src="/assets/app/img06-soundcloud.png" alt="SoundCloud"></li>
+          <ul class="service-thmunail__web">
+            <li class="service-thmunail__web-item"><img src="/assets/app/img01-soundcloud.png" alt="SoundCloud"></li>
+            <li class="service-thmunail__web-item"><img src="/assets/app/img02-soundcloud.png" alt="SoundCloud"></li>
+            <li class="service-thmunail__web-item"><img src="/assets/app/img03-soundcloud.png" alt="SoundCloud"></li>
+            <li class="service-thmunail__web-item"><img src="/assets/app/img04-soundcloud.png" alt="SoundCloud"></li>
+            <li class="service-thmunail__web-item"><img src="/assets/app/img05-soundcloud.png" alt="SoundCloud"></li>
+            <li class="service-thmunail__web-item"><img src="/assets/app/img06-soundcloud.png" alt="SoundCloud"></li>
           </ul>
           <dl>
             <dt> <img src="">
@@ -107,3 +105,4 @@
     </footer>
   </body>
 </html>
+<script src="js/scripts.js"></script>

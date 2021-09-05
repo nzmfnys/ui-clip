@@ -1,4 +1,27 @@
-h1 {
-    font-size: $jp-sp-hedding01;
-    color: blue;
+//サービス情報
+.service-info {
+    display: flex;
+    align-items: center;
+    font-family: $jp-font;
+    &__name {
+        font-size: $en-hedding06 - 4;
+    }
+    &__copy {
+        color: #AAAAAA;
+        font-size: 10px;
+    }
+}
+
+// webサムネいるエリア
+.service-thmunail__web {
+    display: flex;
+    
+    &-item {
+        &:not(:nth-child(6)){
+        margin-right: 18px;
+    }
+        img {
+            width: 100%;
+        }
+    }
 }

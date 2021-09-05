@@ -26,9 +26,9 @@ html(lang="ja")
       ga('send', 'pageview');
   body
     script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
-    script.
-      (window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));
-    script(src="js/scripts.js")
+    //- script.
+    //-   (window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));
+    
 
 
     //- ヘッダー
@@ -55,29 +55,29 @@ html(lang="ja")
         //- サービスエリア 
         div.tab-wrap__content
           //-　サービス情報
-          dl
-            dt 
+          dl.service-info
+            dt
               //-　アイコン
               img(src="/assets/app/icon-soundcloud.svg")
+            dd
               //-　サービス名称
-              h2 SoundCloud
-            
-            //-　コピーライト
-            dd © SoundCloud Global Limited & Co KG
+              h2.service-info__name SoundCloud
+              //-　コピーライト
+              span.service-info__copy © SoundCloud Global Limited & Co KG
 
           //-　画像
-          ul 
-            li
+          ul.service-thmunail__web
+            li.service-thmunail__web-item
               img(src="/assets/app/img01-soundcloud.png" alt="SoundCloud")
-            li
+            li.service-thmunail__web-item
               img(src="/assets/app/img02-soundcloud.png" alt="SoundCloud")
-            li
+            li.service-thmunail__web-item
               img(src="/assets/app/img03-soundcloud.png" alt="SoundCloud")
-            li
+            li.service-thmunail__web-item
               img(src="/assets/app/img04-soundcloud.png" alt="SoundCloud")
-            li
+            li.service-thmunail__web-item
               img(src="/assets/app/img05-soundcloud.png" alt="SoundCloud")
-            li
+            li.service-thmunail__web-item
               img(src="/assets/app/img06-soundcloud.png" alt="SoundCloud")
 
 
@@ -185,3 +185,4 @@ html(lang="ja")
     //- ビール アイコン
     //- ロゴ
 
+script(src="js/scripts.js")

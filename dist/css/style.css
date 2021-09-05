@@ -447,7 +447,29 @@ body {
   display: block;
 }
 
-h1 {
-  font-size: 26px;
-  color: blue;
+.service-info {
+  display: flex;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.service-info__name {
+  font-size: 14px;
+}
+
+.service-info__copy {
+  color: #AAAAAA;
+  font-size: 10px;
+}
+
+.service-thmunail__web {
+  display: flex;
+}
+
+.service-thmunail__web-item:not(:nth-child(6)) {
+  margin-right: 18px;
+}
+
+.service-thmunail__web-item img {
+  width: 100%;
 }
