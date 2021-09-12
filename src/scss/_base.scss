@@ -91,7 +91,7 @@ body {
     // .tab-wrap__label
     &__label {
         color: White;
-        background: LightGray;
+        // background: LightGray;
         margin-right: 5px;
         padding: 3px 12px;
         order:-1;
@@ -109,7 +109,7 @@ body {
         display: none;
         &:checked {
             &+.tab-wrap__label {
-                background: DeepSkyBlue;
+                // background: DeepSkyBlue;
             }           
         }   
     }
@@ -125,4 +125,20 @@ body {
     }
 }
 
-
+// icon 
+.icon-web {
+    position: relative;
+    left: 50%;
+    background-image: url('/assets/common/icon-web.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.icon-app {
+    position: relative;
+    left: 50%;
+    background-image: url('/assets/common/icon-app.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}

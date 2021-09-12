@@ -51,14 +51,15 @@ html(lang="ja")
       div.tab-wrap
         //- スマートフォンサムネルブロック
         input.tab-wrap__switch(type="radio" id="TAB-01" checked="checked" name="TAB")
-        label.tab-wrap__label(for="TAB-01")
+        label.tab-wrap__label.icon-web(for="TAB-01")
         //- サービスエリア 
         div.tab-wrap__content
-          //-　サービス情報
+          
+          //-　SoundCloudサービス情報
           dl.service-info
             dt
               //-　アイコン
-              img(src="/assets/app/icon-soundcloud.svg")
+              img(src="/assets/app/soundcloud/icon-soundcloud.svg")
             dd
               //-　サービス名称
               h2.service-info__name SoundCloud
@@ -68,17 +69,254 @@ html(lang="ja")
           //-　画像
           ul.service-thmunail__web
             li.service-thmunail__web-item
-              img(src="/assets/app/img01-soundcloud.png" alt="SoundCloud")
+              img(src="/assets/app/soundcloud/img01-soundcloud.png" alt="SoundCloud")
             li.service-thmunail__web-item
-              img(src="/assets/app/img02-soundcloud.png" alt="SoundCloud")
+              img(src="/assets/app/soundcloud/img02-soundcloud.png" alt="SoundCloud")
             li.service-thmunail__web-item
-              img(src="/assets/app/img03-soundcloud.png" alt="SoundCloud")
+              img(src="/assets/app/soundcloud/img03-soundcloud.png" alt="SoundCloud")
             li.service-thmunail__web-item
-              img(src="/assets/app/img04-soundcloud.png" alt="SoundCloud")
+              img(src="/assets/app/soundcloud/img04-soundcloud.png" alt="SoundCloud")
             li.service-thmunail__web-item
-              img(src="/assets/app/img05-soundcloud.png" alt="SoundCloud")
+              img(src="/assets/app/soundcloud/img05-soundcloud.png" alt="SoundCloud")
             li.service-thmunail__web-item
-              img(src="/assets/app/img06-soundcloud.png" alt="SoundCloud")
+              img(src="/assets/app/soundcloud/img06-soundcloud.png" alt="SoundCloud")
+         
+          //-　spotifyサービス情報
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/spotify/icon-spotify.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name Spotify
+              //-　コピーライト
+              span.service-info__copy © Spotify Ltd.
+
+          //-　画像
+          ul.service-thmunail__web
+            li.service-thmunail__web-item
+              img(src="/assets/app/spotify/img01-spotify.png" alt="spotify")
+            li.service-thmunail__web-item
+              img(src="/assets/app/spotify/img02-spotify.png" alt="spotify")
+            li.service-thmunail__web-item
+              img(src="/assets/app/spotify/img03-spotify.png" alt="spotify")
+            li.service-thmunail__web-item
+              img(src="/assets/app/spotify/img04-spotify.png" alt="spotify")
+            li.service-thmunail__web-item
+              img(src="/assets/app/spotify/img05-spotify.png" alt="spotify")
+            li.service-thmunail__web-item
+              img(src="/assets/app/newspicks/img06-spotify.png" alt="spotify")
+         
+          //-　NewsPicksサービス情報
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/newspicks/icon-newspicks.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name NewsPicks
+              //-　コピーライト
+              span.service-info__copy © UZABASE, Inc.
+
+          //-　画像
+          ul.service-thmunail__web
+            li.service-thmunail__web-item
+              img(src="/assets/app/newspicks/img01-newspicks.png" alt="NewsPicks")
+            li.service-thmunail__web-item
+              img(src="/assets/app/newspicks/img02-newspicks.png" alt="NewsPicks")
+            li.service-thmunail__web-item
+              img(src="/assets/app/newspicks/img03-newspicks.png" alt="NewsPicks")
+            li.service-thmunail__web-item
+              img(src="/assets/app/newspicks/img04-newspicks.png" alt="NewsPicks")
+            li.service-thmunail__web-item
+              img(src="/assets/app/newspicks/img05-newspicks.png" alt="NewsPicks")
+            li.service-thmunail__web-item
+              img(src="/assets/app/newspicks/img06-newspicks.png" alt="NewsPicks")
+         
+          //-　Tripadvisorサービス情報
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/tripadvisor/icon-tripadvisor.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name Tripadvisor
+              //-　コピーライト
+              span.service-info__copy © TripAdvisor LLC
+
+          //-　画像
+          ul.service-thmunail__web
+            li.service-thmunail__web-item
+              img(src="/assets/app/tripadvisor/img01-tripadvisor.png" alt="tripadvisor")
+            li.service-thmunail__web-item
+              img(src="/assets/app/tripadvisor/img02-tripadvisor.png" alt="tripadvisor")
+            li.service-thmunail__web-item
+              img(src="/assets/app/tripadvisor/img03-tripadvisor.png" alt="tripadvisor")
+            li.service-thmunail__web-item
+              img(src="/assets/app/tripadvisor/img04-tripadvisor.png" alt="tripadvisor")
+            li.service-thmunail__web-item
+              img(src="/assets/app/tripadvisor/img05-tripadvisor.png" alt="tripadvisor")
+            li.service-thmunail__web-item
+              img(src="/assets/app/tripadvisor/img06-tripadvisor.png" alt="tripadvisor") 
+
+          //-　StyleHintサービス情報
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/stylehint/icon-stylehint.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name StyleHint
+              //-　コピーライト
+              span.service-info__copy © FAST RETAILING CO., LTD. 
+
+          //-　画像
+          ul.service-thmunail__web
+            li.service-thmunail__web-item
+              img(src="/assets/app/stylehint/img01-stylehint.png" alt="StyleHint")
+            li.service-thmunail__web-item
+              img(src="/assets/app/stylehint/img02-stylehint.png" alt="StyleHint")
+            li.service-thmunail__web-item
+              img(src="/assets/app/stylehint/img03-stylehint.png" alt="StyleHint")
+            li.service-thmunail__web-item
+              img(src="/assets/app/stylehint/img04-stylehint.png" alt="StyleHint")
+            li.service-thmunail__web-item
+              img(src="/assets/app/stylehint/img05-stylehint.png" alt="StyleHint")
+            li.service-thmunail__web-item
+              img(src="/assets/app/stylehint/img06-stylehint.png" alt="StyleHint")                    
+
+          //-　GOサービス情報
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/go/icon-go.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name GO
+              //-　コピーライト
+              span.service-info__copy © Mobility Technologies Co., Ltd.
+
+          //-　画像
+          ul.service-thmunail__web
+            li.service-thmunail__web-item
+              img(src="/assets/app/go/img01-go.png" alt="GO")
+            li.service-thmunail__web-item
+              img(src="/assets/app/go/img02-go.png" alt="GO")
+            li.service-thmunail__web-item
+              img(src="/assets/app/go/img03-go.png" alt="GO")
+            li.service-thmunail__web-item
+              img(src="/assets/app/go/img04-go.png" alt="GO")
+            li.service-thmunail__web-item
+              img(src="/assets/app/go/img05-go.png" alt="GO")
+            li.service-thmunail__web-item
+              img(src="/assets/app/go/img06-go.png" alt="GO")     
+
+          //-　S.RIDEサービス情報
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/sride/icon-sride.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name S.RIDE
+              //-　コピーライト
+              span.service-info__copy © S.RIDE Inc.
+
+          //-　画像
+          ul.service-thmunail__web
+            li.service-thmunail__web-item
+              img(src="/assets/app/sride/img01-sride.png" alt="S.RIDE")
+            li.service-thmunail__web-item
+              img(src="/assets/app/sride/img02-sride.png" alt="S.RIDE")
+            li.service-thmunail__web-item
+              img(src="/assets/app/sride/img03-sride.png" alt="S.RIDE")
+            li.service-thmunail__web-item
+              img(src="/assets/app/sride/img04-sride.png" alt="S.RIDE")
+            li.service-thmunail__web-item
+              img(src="/assets/app/sride/img05-sride.png" alt="S.RIDE")
+            li.service-thmunail__web-item
+              img(src="/assets/app/sride/img06-sride.png" alt="S.RIDE")      
+
+          //-　Evernoteサービス情報
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/evernote/icon-evernote.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name Evernote
+              //-　コピーライト
+              span.service-info__copy © Evernote Corporation.
+
+          //-　画像
+          ul.service-thmunail__web
+            li.service-thmunail__web-item
+              img(src="/assets/app/evernote/img01-evernote.png" alt="Evernote")
+            li.service-thmunail__web-item
+              img(src="/assets/app/evernote/img02-evernote.png" alt="Evernote")
+            li.service-thmunail__web-item
+              img(src="/assets/app/evernote/img03-evernote.png" alt="Evernote")
+            li.service-thmunail__web-item
+              img(src="/assets/app/evernote/img04-evernote.png" alt="Evernote")
+            li.service-thmunail__web-item
+              img(src="/assets/app/evernote/img05-evernote.png" alt="Evernote")
+            li.service-thmunail__web-item
+              img(src="/assets/app/evernote/img06-evernote.png" alt="Evernote")    
+
+          //-　Uber Eatsサービス情報
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/ubereats/icon-ubereats.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name Uber Eats
+              //-　コピーライト
+              span.service-info__copy © Uber Technologies, Inc.
+
+          //-　画像
+          ul.service-thmunail__web
+            li.service-thmunail__web-item
+              img(src="/assets/app/ubereats/img01-ubereats.png" alt="Uber Eats")
+            li.service-thmunail__web-item
+              img(src="/assets/app/ubereats/img02-ubereats.png" alt="Uber Eats")
+            li.service-thmunail__web-item
+              img(src="/assets/app/ubereats/img03-ubereats.png" alt="Uber Eats")
+            li.service-thmunail__web-item
+              img(src="/assets/app/ubereats/img04-ubereats.png" alt="Uber Eats")
+            li.service-thmunail__web-item
+              img(src="/assets/app/ubereats/img05-ubereats.png" alt="Uber Eats")
+            li.service-thmunail__web-item
+              img(src="/assets/app/ubereats/img06-ubereats.png" alt="Uber Eats") 
+
+          //-　出前館サービス情報
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/demaekan/icon-demaekan.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name 出前館
+              //-　コピーライト
+              span.service-info__copy © DEMAE-CAN CO., LTD
+
+          //-　画像
+          ul.service-thmunail__web
+            li.service-thmunail__web-item
+              img(src="/assets/app/demaekan/img01-demaekan.png" alt="出前館")
+            li.service-thmunail__web-item
+              img(src="/assets/app/demaekan/img02-demaekan.png" alt="出前館")
+            li.service-thmunail__web-item
+              img(src="/assets/app/demaekan/img03-demaekan.png" alt="出前館")
+            li.service-thmunail__web-item
+              img(src="/assets/app/demaekan/img04-demaekan.png" alt="出前館")
+            li.service-thmunail__web-item
+              img(src="/assets/app/demaekan/img05-demaekan.png" alt="出前館")
+            li.service-thmunail__web-item
+              img(src="/assets/app/demaekan/img06-demaekan.png" alt="出前館")                  
+
+          
+
 
 
           dl
@@ -99,7 +337,7 @@ html(lang="ja")
         
         //- APPサムネルブロック
         input.tab-wrap__switch(type="radio" id="TAB-02" name="TAB")
-        label.tab-wrap__label(for="TAB-02") 
+        label.tab-wrap__label.icon-app(for="TAB-02") 
         div.tab-wrap__content
           //-　サービス情報
           dl

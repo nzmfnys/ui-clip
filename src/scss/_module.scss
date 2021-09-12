@@ -2,7 +2,11 @@
 .service-info {
     display: flex;
     align-items: center;
+    margin-bottom: 25px;
     font-family: $jp-font;
+    dt {
+        margin-right: 20px;
+    }
     &__name {
         font-size: $en-hedding06 - 4;
     }
@@ -15,7 +19,7 @@
 // webサムネいるエリア
 .service-thmunail__web {
     display: flex;
-    
+    margin-bottom: 60px;
     &-item {
         &:not(:nth-child(6)){
         margin-right: 18px;

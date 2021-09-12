@@ -423,7 +423,6 @@ body {
 
 .tab-wrap__label {
   color: White;
-  background: LightGray;
   margin-right: 5px;
   padding: 3px 12px;
   order: -1;
@@ -439,18 +438,37 @@ body {
   display: none;
 }
 
-.tab-wrap__switch:checked + .tab-wrap__label {
-  background: DeepSkyBlue;
-}
-
 .tab-wrap__switch:checked + .tab-wrap__label + .tab-wrap__content {
   display: block;
+}
+
+.icon-web {
+  position: relative;
+  left: 50%;
+  background-image: url("/assets/common/icon-web.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-app {
+  position: relative;
+  left: 50%;
+  background-image: url("/assets/common/icon-app.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
 }
 
 .service-info {
   display: flex;
   align-items: center;
+  margin-bottom: 25px;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+.service-info dt {
+  margin-right: 20px;
 }
 
 .service-info__name {
@@ -464,6 +482,7 @@ body {
 
 .service-thmunail__web {
   display: flex;
+  margin-bottom: 60px;
 }
 
 .service-thmunail__web-item:not(:nth-child(6)) {
