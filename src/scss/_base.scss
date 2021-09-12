@@ -82,63 +82,76 @@ body {
     padding: 0 50px;
     margin: 0 auto;
 }
+.content {
+    &__inner {
+        max-width: 1540px;
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+}
+
 
 //タブラッパー
-.tab-wrap {
+.tab-switch {
     display: flex;
-    flex-wrap: wrap;
-    
-    // .tab-wrap__label
-    &__label {
-        color: White;
-        // background: LightGray;
-        margin-right: 5px;
-        padding: 3px 12px;
-        order:-1;
-    }
+    justify-content: center;
+    cursor: pointer;
+    max-width: 1000px;
+    margin: 0 auto;
 
-    // .tab-wrap__content
-    &__content {
-        width: 100%;
+    // .tab-switch__item 
+    &__item {
+        width: 30%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+
+        &.icon-web {
+            background-image: url('/assets/common/icon-web.svg');
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            fill: red;
+            color: red;
+        }
+
+        &.icon-app {
+            background-image: url('/assets/common/icon-app.svg');
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+        }
+
+
+
+
+        
+        // .tab-switch__item.is-active 
+        &.is-active {
+            background-color: #222e3e;
+            color: #fff;
+            border: none;
+        }
+    }
+}
+.tab-contents {
+    font-size: 30px;
+    text-align: center;
+
+    // tab-contents__item
+    &__item{
         display: none;
-        margin-top: 50px;
-    }
-
-    // .tab-wrap__switch
-    &__switch {
-        display: none;
-        &:checked {
-            &+.tab-wrap__label {
-                // background: DeepSkyBlue;
-            }           
-        }   
-    }
-    /* TODO:CSS直す */
-    &__switch {
-        &:checked {
-            &+.tab-wrap__label{
-                &+.tab-wrap__content{
-                    display: block;
-                }
-            }
-        }   
+        
+        // tab-contents__item.is-show
+        &.is-show {
+            margin-top: 50px;
+            display: block;
+        }
     }
 }
 
-// icon 
-.icon-web {
-    position: relative;
-    left: 50%;
-    background-image: url('/assets/common/icon-web.svg');
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
+.arrow-svg {
+    fill: red;
 }
-.icon-app {
-    position: relative;
-    left: 50%;
-    background-image: url('/assets/common/icon-app.svg');
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-}
+
+

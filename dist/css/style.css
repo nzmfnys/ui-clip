@@ -415,49 +415,65 @@ body {
   margin: 0 auto;
 }
 
-.tab-wrap {
+.content__inner {
+  max-width: 1540px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.tab-switch {
   display: flex;
-  flex-wrap: wrap;
-  /* TODO:CSS直す */
+  justify-content: center;
+  cursor: pointer;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.tab-wrap__label {
-  color: White;
-  margin-right: 5px;
-  padding: 3px 12px;
-  order: -1;
+.tab-switch__item {
+  width: 30%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
 }
 
-.tab-wrap__content {
-  width: 100%;
-  display: none;
-  margin-top: 50px;
-}
-
-.tab-wrap__switch {
-  display: none;
-}
-
-.tab-wrap__switch:checked + .tab-wrap__label + .tab-wrap__content {
-  display: block;
-}
-
-.icon-web {
-  position: relative;
-  left: 50%;
+.tab-switch__item.icon-web {
   background-image: url("/assets/common/icon-web.svg");
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
+  fill: red;
+  color: red;
 }
 
-.icon-app {
-  position: relative;
-  left: 50%;
+.tab-switch__item.icon-app {
   background-image: url("/assets/common/icon-app.svg");
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
+}
+
+.tab-switch__item.is-active {
+  background-color: #222e3e;
+  color: #fff;
+  border: none;
+}
+
+.tab-contents {
+  font-size: 30px;
+  text-align: center;
+}
+
+.tab-contents__item {
+  display: none;
+}
+
+.tab-contents__item.is-show {
+  margin-top: 50px;
+  display: block;
+}
+
+.arrow-svg {
+  fill: red;
 }
 
 .service-info {
