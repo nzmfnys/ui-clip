@@ -106,8 +106,12 @@ body {
         line-height: 30px;
         text-align: center;
 
+        &:first-child {
+            margin-right: 30px;
+        }
+
         &.icon-web {
-            background-image: url('/assets/common/icon-web.svg');
+            background-image: url('/assets/common/icon-app.svg');
             background-repeat: no-repeat;
             width: 30px;
             height: 30px;
@@ -116,19 +120,15 @@ body {
         }
 
         &.icon-app {
-            background-image: url('/assets/common/icon-app.svg');
+            background-image: url('/assets/common/icon-web.svg');
             background-repeat: no-repeat;
-            width: 30px;
-            height: 30px;
+            width: 28px;
+            height: 28px;
         }
-
-
-
-
         
         // .tab-switch__item.is-active 
         &.is-active {
-            background-color: #222e3e;
+            // background-color: #222e3e;
             color: #fff;
             border: none;
         }
@@ -137,6 +137,7 @@ body {
 .tab-contents {
     font-size: 30px;
     text-align: center;
+    margin-top: 50px;
 
     // tab-contents__item
     &__item{

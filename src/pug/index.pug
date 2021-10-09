@@ -47,11 +47,43 @@ html(lang="ja")
     section.content
       .content__inner
         .tab-switch
-          .tab-switch__item.is-active 
-            img(src="/assets/common/icon-web.svg")
-          .tab-switch__item.icon-app 
+          .tab-switch__item.icon-app
+          .tab-switch__item.icon-web
         .tab-contents
-          .tab-contents__item.is-show タブ１を押したときに表示されるコンテンツ
+          //-　APPコンテンツ
+          .tab-contents__item.is-show
+            //-　SoundCloudサービス情報
+            dl.service-info
+              dt
+                //-　アイコン
+                img(src="/assets/app/soundcloud/icon-soundcloud.svg")
+              dd
+                //-　サービス名称
+                h2.service-info__name SoundCloud
+                //-　コピーライト
+                span.service-info__copy © SoundCloud Global Limited & Co KG
+
+            //-　画像
+            ul.service-thmunail__web
+              li.service-thmunail__web-item
+                img(src="/assets/app/soundcloud/img01-soundcloud.png" alt="SoundCloud")
+              li.service-thmunail__web-item
+                img(src="/assets/app/soundcloud/img02-soundcloud.png" alt="SoundCloud")
+              li.service-thmunail__web-item
+                img(src="/assets/app/soundcloud/img03-soundcloud.png" alt="SoundCloud")
+              li.service-thmunail__web-item
+                img(src="/assets/app/soundcloud/img04-soundcloud.png" alt="SoundCloud")
+              li.service-thmunail__web-item
+                img(src="/assets/app/soundcloud/img05-soundcloud.png" alt="SoundCloud")
+              li.service-thmunail__web-item
+                img(src="/assets/app/soundcloud/img06-soundcloud.png" alt="SoundCloud")
+
+
+
+
+
+
+          //-　WEBコンテンツ
           .tab-contents__item タブ2を押したときに表示されるコンテンツ
 
 

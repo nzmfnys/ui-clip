@@ -436,8 +436,12 @@ body {
   text-align: center;
 }
 
+.tab-switch__item:first-child {
+  margin-right: 30px;
+}
+
 .tab-switch__item.icon-web {
-  background-image: url("/assets/common/icon-web.svg");
+  background-image: url("/assets/common/icon-app.svg");
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
@@ -446,14 +450,13 @@ body {
 }
 
 .tab-switch__item.icon-app {
-  background-image: url("/assets/common/icon-app.svg");
+  background-image: url("/assets/common/icon-web.svg");
   background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 }
 
 .tab-switch__item.is-active {
-  background-color: #222e3e;
   color: #fff;
   border: none;
 }
@@ -461,6 +464,7 @@ body {
 .tab-contents {
   font-size: 30px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .tab-contents__item {
@@ -488,6 +492,7 @@ body {
 }
 
 .service-info__name {
+  text-align: left;
   font-size: 14px;
 }
 
