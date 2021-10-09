@@ -51,7 +51,9 @@ html(lang="ja")
           .tab-switch__item.icon-web
         .tab-contents
           //-　APPコンテンツ
-          .tab-contents__item.is-show
+          .tab-contents__item-area.is-show
+
+            .tab-contents__item-inner
             //-　SoundCloudサービス情報
             dl.service-info
               dt
@@ -60,8 +62,8 @@ html(lang="ja")
               dd
                 //-　サービス名称
                 h2.service-info__name SoundCloud
-                //-　コピーライト
-                span.service-info__copy © SoundCloud Global Limited & Co KG
+                  //-　コピーライト
+                  span.service-info__copy © SoundCloud Global Limited & Co KG
 
             //-　画像
             ul.service-thmunail__web
@@ -84,7 +86,7 @@ html(lang="ja")
 
 
           //-　WEBコンテンツ
-          .tab-contents__item タブ2を押したときに表示されるコンテンツ
+          .tab-contents__item-area タブ2を押したときに表示されるコンテンツ
 
 
     //-     ul.service-thmunail__web

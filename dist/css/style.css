@@ -467,11 +467,11 @@ body {
   margin-top: 50px;
 }
 
-.tab-contents__item {
+.tab-contents__item-area {
   display: none;
 }
 
-.tab-contents__item.is-show {
+.tab-contents__item-area.is-show {
   margin-top: 50px;
   display: block;
 }
@@ -497,6 +497,8 @@ body {
 }
 
 .service-info__copy {
+  display: block;
+  margin-top: 5px;
   color: #AAAAAA;
   font-size: 10px;
 }

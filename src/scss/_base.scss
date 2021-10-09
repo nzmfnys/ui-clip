@@ -90,7 +90,6 @@ body {
     }
 }
 
-
 //タブラッパー
 .tab-switch {
     display: flex;
@@ -140,7 +139,7 @@ body {
     margin-top: 50px;
 
     // tab-contents__item
-    &__item{
+    &__item-area{
         display: none;
         
         // tab-contents__item.is-show

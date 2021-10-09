@@ -15,7 +15,7 @@
 		const index = $(this).index();
 		
 		//.tab-area__contents-mainが付いている要素のindex番目にis-showクラスを付与
-		$('.tab-contents__item').eq(index).addClass('is-show');
+		$('.tab-contents__item-area').eq(index).addClass('is-show');
 
 	});
 });
