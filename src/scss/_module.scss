@@ -7,10 +7,14 @@
     dt {
         margin-right: 20px;
     }
+
+    //.service-info__name
     &__name {
         text-align: left;
         font-size: $en-hedding06 - 4;
     }
+
+    //.service-info__copy
     &__copy {
         display: block;
         margin-top: 5px;
@@ -18,8 +22,13 @@
         font-size: 10px;
     }
 }
+//web用の見出し
+.service-name-web {
+    margin-bottom: 15px;
+    @extend .service-info__name;
+}
 
-// webサムネいるエリア
+//サムネイルエリア
 .service-thmunail__app {
     display: flex;
     margin-bottom: 60px;
@@ -61,8 +70,12 @@
         &:last-child {
             margin-left: 20px;
         }
-        &.is-active {
-            color: #333;
-        } 
+        a {
+            color: #AAAAAA;
+
+            &.is-active {
+                color: #333;
+            }
+        }
     }
 }
