@@ -18,4 +18,9 @@
 		$('.tab-contents__item-area').eq(index).addClass('is-show');
 
 	});
+	//
+	// $('.test1').pagination({
+	// 	itemElement : '> .tab-contents__item-inner', // アイテムの要素
+	// 	displayItemCount: '5' //表示する数
+	// });
 });

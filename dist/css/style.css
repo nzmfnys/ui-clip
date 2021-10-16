@@ -503,15 +503,50 @@ body {
   font-size: 10px;
 }
 
-.service-thmunail__web {
+.service-thmunail__app {
   display: flex;
   margin-bottom: 60px;
 }
 
-.service-thmunail__web-item:not(:nth-child(6)) {
+.service-thmunail__app-item:not(:nth-child(6)) {
   margin-right: 18px;
 }
 
-.service-thmunail__web-item img {
+.service-thmunail__app-item img {
   width: 100%;
+}
+
+.advertisement-area {
+  margin: 120px calc(50% - 50vw);
+  width: 100vw;
+  padding: 10px 0;
+  background-color: red;
+}
+
+.advertisement-area__add-book {
+  background-color: #F1F1F1;
+}
+
+.pagenation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.pagenation li {
+  color: #AAAAAA;
+  padding: 0 20px;
+}
+
+.pagenation li:first-child {
+  margin-right: 20px;
+}
+
+.pagenation li:last-child {
+  margin-left: 20px;
+}
+
+.pagenation li.is-active {
+  color: #333;
 }
