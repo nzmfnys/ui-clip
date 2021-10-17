@@ -1,8 +1,8 @@
 $sizes: sp, pc;  //冒頭に使うサイズを明記するとわかりやすい
 
 $breakpoint-up: ( 
-  'sp': 'screen and (min-width: 375px)',
-  'pc': 'screen and (min-width: 960px)',
+  'sp': 'screen and (max-width: 767px)',
+  'pc': 'screen and (min-width: 768px)',
 ) !default;
 
 //mixinを定義（初期値はpc）

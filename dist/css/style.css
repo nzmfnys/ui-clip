@@ -397,6 +397,12 @@ body {
   margin: 0 auto 80px;
 }
 
+@media screen and (max-width: 767px) {
+  .header-inner {
+    background-color: red;
+  }
+}
+
 .header-inner__navi {
   display: flex;
   align-items: center;

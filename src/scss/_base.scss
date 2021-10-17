@@ -58,6 +58,10 @@ body {
     padding: 10px 50px;
     margin: 0 auto 80px;
 
+    @include mq-up('sp') {
+        background-color: red;
+      }
+
     // .header-inner__navi
     &__navi {
         display: flex;
