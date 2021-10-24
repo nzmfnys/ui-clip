@@ -59,7 +59,7 @@ body {
     margin: 0 auto 80px;
 
     @include mq-up('sp') {
-        background-color: red;
+        padding: 20px 15px;
       }
 
     // .header-inner__navi
@@ -68,9 +68,82 @@ body {
         align-items: center;
         justify-content: space-between;
         list-style: none;
+
+        @include mq-up('sp') {
+            display: block;
+        }
     }
     &__navi-link {
         background-image: url('/assets/common/navigation-pc-top.svg');
+
+        //- ハンバーガーメニュー
+        @include mq-up('sp') {
+            //- ハンバーガーメニュー　アイコン
+            .hamburger {
+                display : block;
+                position: fixed;
+                z-index : 3;
+                right : 20px;
+                top   : 12px;
+                width : 60px;
+                height: 60px;
+                cursor: pointer;
+                text-align: center;
+                background-image: url('/assets/common/hamburger-bg.png');
+                &-inner {
+                    position: absolute;
+                    top: 8px;
+                    left: 15px;
+                }
+                span {
+                    display : block;
+                    position: absolute;
+                    width   : 18px;
+                    height  : 2px ;
+                    left    : 6px;
+                    background : #191919;
+                    -webkit-transition: 0.3s ease-in-out;
+                    -moz-transition   : 0.3s ease-in-out;
+                    transition        : 0.3s ease-in-out;
+                }
+                &__lineTop {
+                    top: 10px;
+                }
+                &__lineMiddle {
+                    top: 20px;
+                }
+                &__lineBottom {
+                    top: 30px;
+                }
+                //- ハンバーガーメニュー click時の動き
+                &.active {
+                    .hamburger {
+                        &__lineTop {
+                            top : 21px;
+                            left: 6px;
+                            background :#191919;
+                            -webkit-transform: rotate(-45deg);
+                            -moz-transform   : rotate(-45deg);
+                            transform        : rotate(-45deg);
+                        }
+                        &__lineMiddle {
+                            top: 21px;
+                            background :#191919;
+                            -webkit-transform: rotate(45deg);
+                            -moz-transform   : rotate(45deg);
+                            transform        : rotate(45deg);
+                        }
+                        &__lineBottom {
+                            top: 21px;
+                            background :#191919;
+                            -webkit-transform: rotate(45deg);
+                            -moz-transform   : rotate(45deg);
+                            transform        : rotate(45deg);
+                        }                        
+                    }
+                }
+            }
+        }
     }
     // .header-inner__menu
     &__menu {
@@ -79,6 +152,20 @@ body {
         padding: 5px 40px 0;
         background-image: url('/assets/common/navigation-pc-under.svg');
         height: 70px;
+
+        @include mq-up('sp') {
+            display: none;
+
+            &.active {
+                padding: 0;
+                background-color: #F7F7F7;
+                display: block;
+                background-image: none;
+                position: relative;
+                height: 100vh;
+                overflow-x: hidden;
+            }
+        }
 
         // .header-inner__menu-item
         &-item {

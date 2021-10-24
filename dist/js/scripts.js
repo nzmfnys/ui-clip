@@ -23,4 +23,16 @@
 	// 	itemElement : '> .tab-contents__item-inner', // アイテムの要素
 	// 	displayItemCount: '5' //表示する数
 	// });
+
+	$(function() {
+		$('.hamburger').click(function() {
+			$(this).toggleClass('active');
+	 
+			if ($(this).hasClass('active')) {
+				$('.header-inner__menu').addClass('active');
+			} else {
+				$('.header-inner__menu').removeClass('active');
+			}
+		});
+	});
 });
