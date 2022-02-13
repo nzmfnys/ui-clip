@@ -16,6 +16,9 @@ html(lang="ja")
     meta(property="fb:app_id", content="任意のID")
     title タイトル
     link(rel='stylesheet', href="css/style.css")
+    link(rel='stylesheet', href="css/slick.css")
+    link(rel='stylesheet', href="css/slick-theme.css")
+    
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -70,7 +73,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © SoundCloud Global Limited & Co KG
               //-　画像
-              ul.service-thmunail__app
+              ul.service-thmunail__app.slider
                 - 
                   var list = [
                     {
@@ -114,7 +117,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © Spotify Ltd.
               //-　画像
-              ul.service-thmunail__app
+              ul.service-thmunail__app.slider
                 - 
                   var listSpotify = [
                     {
@@ -158,7 +161,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy UZABASE, Inc.
               //-　画像
-              ul.service-thmunail__app
+              ul.service-thmunail__app.slider
                 - 
                   var listNewspicks = [
                     {
@@ -202,7 +205,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © TripAdvisor LLC
               //-　画像
-              ul.service-thmunail__app
+              ul.service-thmunail__app.slider
                 - 
                   var listTripadvisor = [
                     {
@@ -246,7 +249,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © FAST RETAILING CO., LTD. 
               //-　画像
-              ul.service-thmunail__app
+              ul.service-thmunail__app.slider
                 - 
                   var listStylehint = [
                     {
@@ -295,7 +298,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © Mobility Technologies Co., Ltd.
               //-　画像
-              ul.service-thmunail__app
+              ul.service-thmunail__app.slider
                 - 
                   var listGo = [
                     {
@@ -339,7 +342,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © S.RIDE Inc.
               //-　画像
-              ul.service-thmunail__app
+              ul.service-thmunail__app.slider
                 - 
                   var listGo = [
                     {
@@ -383,7 +386,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © Evernote Corporation.
               //-　画像
-              ul.service-thmunail__app
+              ul.service-thmunail__app.slider
                 - 
                   var listEvernote = [
                     {
@@ -427,7 +430,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © Uber Technologies, Inc.
               //-　画像
-              ul.service-thmunail__app
+              ul.service-thmunail__app.slider
                 - 
                   var listUbereats = [
                     {
@@ -471,7 +474,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © DEMAE-CAN CO., LTD
               //-　画像
-              ul.service-thmunail__app
+              ul.service-thmunail__app.slider
                 - 
                   var listDemaekan = [
                     {
@@ -524,7 +527,7 @@ html(lang="ja")
               h2.service-name-web SoundCloud
               //-　画像
               //TODO:  画像のマージンをAPPとかえる　1920pxの時に左マージンが広くなってしまう
-              ul.service-thmunail__app
+              ul.service-thmunail__app.slider
                 - 
                   var listApp = [
                     {
@@ -569,6 +572,9 @@ html(lang="ja")
 
 
 
-script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+//- script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+script(src="//code.jquery.com/jquery-1.11.0.min.js")
+script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
 script(src="js/scripts.js")
 //- script(src="js/pagination.js")

@@ -16,7 +16,6 @@
 		
 		//.tab-area__contents-mainが付いている要素のindex番目にis-showクラスを付与
 		$('.tab-contents__item-area').eq(index).addClass('is-show');
-
 	});
 	//
 	// $('.test1').pagination({
@@ -27,7 +26,6 @@
 	$(function() {
 		$('.hamburger').click(function() {
 			$(this).toggleClass('active');
-	 
 			if ($(this).hasClass('active')) {
 				$('.header-inner__menu').addClass('active');
 			} else {
@@ -36,3 +34,40 @@
 		});
 	});
 });
+
+//SlickSlider
+$(function(){
+  $('.slider').slick({
+    mobileFirst: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+
+    //768px以下の時はslickを実行しない
+    responsive: [ {
+      breakpoint: 768,
+      settings: 'unslick'
+    } ]
+});
+
+//リサイズした時に実行
+$(window).on('resize orientationchange', function() {
+  $('.slider').slick('resize');
+});
+});
+
+
+// $(document).ready(function() {
+//   $('.slider').slick({
+//     autoplay: true,
+//     dots: true,
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//     responsive: [{
+//       breakpoint: 768,
+//       settings: {
+//         autoplay: false,
+//       }
+//     }]
+//   });
+// });

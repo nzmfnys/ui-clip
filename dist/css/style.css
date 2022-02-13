@@ -388,7 +388,7 @@ a:hover {
 body {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   font-size: 14px;
 }
 
@@ -496,7 +496,7 @@ body {
   }
   .header-inner__menu.active {
     padding: 0;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     display: block;
     background-image: none;
     position: relative;
@@ -509,16 +509,16 @@ body {
   margin-right: 30px;
 }
 
-.content-inner {
+.content__inner {
   max-width: 1540px;
   padding: 0 50px;
   margin: 0 auto;
 }
 
-.content__inner {
-  max-width: 1540px;
-  padding: 0 50px;
-  margin: 0 auto;
+@media screen and (max-width: 767px) {
+  .content__inner {
+    padding: 0px 20px;
+  }
 }
 
 .tab-switch {
@@ -581,7 +581,7 @@ body {
 }
 
 footer .footer-inner {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   padding: 30px 0;
 }
 
@@ -622,7 +622,7 @@ footer .footer-inner .copyright {
 .service-info__copy {
   display: block;
   margin-top: 5px;
-  color: #AAAAAA;
+  color: #aaaaaa;
   font-size: 10px;
 }
 
@@ -635,12 +635,28 @@ footer .footer-inner .copyright {
   margin-bottom: 60px;
 }
 
-.service-thmunail__app-item:not(:nth-child(6)) {
+@media screen and (max-width: 767px) {
+  .service-thmunail__app-item {
+    max-width: 225px;
+  }
+  .service-thmunail__app-item:first-child {
+    margin-left: 20px;
+  }
+}
+
+.service-thmunail__app-item:not(:last-child) {
   margin-right: 18px;
 }
 
 .service-thmunail__app-item img {
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .service-thmunail__app {
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+  }
 }
 
 .advertisement-area {
@@ -651,7 +667,7 @@ footer .footer-inner .copyright {
 }
 
 .advertisement-area__add-book {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .pagenation {
@@ -662,7 +678,7 @@ footer .footer-inner .copyright {
 }
 
 .pagenation li {
-  color: #AAAAAA;
+  color: #aaaaaa;
   padding: 0 20px;
 }
 
@@ -675,7 +691,7 @@ footer .footer-inner .copyright {
 }
 
 .pagenation li a {
-  color: #AAAAAA;
+  color: #aaaaaa;
 }
 
 .pagenation li a.is-active {

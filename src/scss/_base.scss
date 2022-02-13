@@ -1,7 +1,6 @@
-
 // FontFamily
-$en-font: 'Crimson Text', serif;
-$jp-font: 'Noto Sans JP', sans-serif;
+$en-font: "Crimson Text", serif;
+$jp-font: "Noto Sans JP", sans-serif;
 
 // JP_PC_headding
 $jp-hedding01: 32px;
@@ -37,248 +36,245 @@ $en-sp-hedding06: 18px;
 
 // デフォルトクリア
 a {
-    text-decoration: none;
+  text-decoration: none;
 
-    &:hover {
-        opacity: 0.5;
-    }
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
-
 body {
-    font-family: $jp-font;
-    color: #333333;
-    background-color: #F7F7F7;
-    font-size: 14px;
+  font-family: $jp-font;
+  color: #333333;
+  background-color: #f7f7f7;
+  font-size: 14px;
 }
 
 // ヘッダー
 // .header-inner
 .header-inner {
-    padding: 10px 50px;
-    margin: 0 auto 80px;
+  padding: 10px 50px;
+  margin: 0 auto 80px;
 
-    @include mq-up('sp') {
-        padding: 20px 15px;
+  @include mq-up("sp") {
+    padding: 20px 15px;
+  }
+
+  // .header-inner__navi
+  &__navi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+    @include mq-up("sp") {
+      display: block;
+    }
+  }
+  &__navi-link {
+    background-image: url("/assets/common/navigation-pc-top.svg");
+
+    //- ハンバーガーメニュー
+    @include mq-up("sp") {
+      //- ハンバーガーメニュー　アイコン
+      .hamburger {
+        display: block;
+        position: fixed;
+        z-index: 3;
+        right: 20px;
+        top: 12px;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        text-align: center;
+        background-image: url("/assets/common/hamburger-bg.png");
+        &-inner {
+          position: absolute;
+          top: 8px;
+          left: 15px;
+        }
+        span {
+          display: block;
+          position: absolute;
+          width: 18px;
+          height: 2px;
+          left: 6px;
+          background: #191919;
+          -webkit-transition: 0.3s ease-in-out;
+          -moz-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+        }
+        &__lineTop {
+          top: 10px;
+        }
+        &__lineMiddle {
+          top: 20px;
+        }
+        &__lineBottom {
+          top: 30px;
+        }
+        //- ハンバーガーメニュー click時の動き
+        &.active {
+          .hamburger {
+            &__lineTop {
+              top: 21px;
+              left: 6px;
+              background: #191919;
+              -webkit-transform: rotate(-45deg);
+              -moz-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+            }
+            &__lineMiddle {
+              top: 21px;
+              background: #191919;
+              -webkit-transform: rotate(45deg);
+              -moz-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+            &__lineBottom {
+              top: 21px;
+              background: #191919;
+              -webkit-transform: rotate(45deg);
+              -moz-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+          }
+        }
       }
-
-    // .header-inner__navi
-    &__navi {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        list-style: none;
-
-        @include mq-up('sp') {
-            display: block;
-        }
     }
-    &__navi-link {
-        background-image: url('/assets/common/navigation-pc-top.svg');
+  }
+  // .header-inner__menu
+  &__menu {
+    display: flex;
+    align-items: center;
+    padding: 5px 40px 0;
+    background-image: url("/assets/common/navigation-pc-under.svg");
+    height: 70px;
 
-        //- ハンバーガーメニュー
-        @include mq-up('sp') {
-            //- ハンバーガーメニュー　アイコン
-            .hamburger {
-                display : block;
-                position: fixed;
-                z-index : 3;
-                right : 20px;
-                top   : 12px;
-                width : 60px;
-                height: 60px;
-                cursor: pointer;
-                text-align: center;
-                background-image: url('/assets/common/hamburger-bg.png');
-                &-inner {
-                    position: absolute;
-                    top: 8px;
-                    left: 15px;
-                }
-                span {
-                    display : block;
-                    position: absolute;
-                    width   : 18px;
-                    height  : 2px ;
-                    left    : 6px;
-                    background : #191919;
-                    -webkit-transition: 0.3s ease-in-out;
-                    -moz-transition   : 0.3s ease-in-out;
-                    transition        : 0.3s ease-in-out;
-                }
-                &__lineTop {
-                    top: 10px;
-                }
-                &__lineMiddle {
-                    top: 20px;
-                }
-                &__lineBottom {
-                    top: 30px;
-                }
-                //- ハンバーガーメニュー click時の動き
-                &.active {
-                    .hamburger {
-                        &__lineTop {
-                            top : 21px;
-                            left: 6px;
-                            background :#191919;
-                            -webkit-transform: rotate(-45deg);
-                            -moz-transform   : rotate(-45deg);
-                            transform        : rotate(-45deg);
-                        }
-                        &__lineMiddle {
-                            top: 21px;
-                            background :#191919;
-                            -webkit-transform: rotate(45deg);
-                            -moz-transform   : rotate(45deg);
-                            transform        : rotate(45deg);
-                        }
-                        &__lineBottom {
-                            top: 21px;
-                            background :#191919;
-                            -webkit-transform: rotate(45deg);
-                            -moz-transform   : rotate(45deg);
-                            transform        : rotate(45deg);
-                        }                        
-                    }
-                }
-            }
-        }
+    @include mq-up("sp") {
+      display: none;
+
+      &.active {
+        padding: 0;
+        background-color: #f7f7f7;
+        display: block;
+        background-image: none;
+        position: relative;
+        height: 100vh;
+        overflow-x: hidden;
+      }
     }
-    // .header-inner__menu
-    &__menu {
-        display: flex;
-        align-items: center;
-        padding: 5px 40px 0;
-        background-image: url('/assets/common/navigation-pc-under.svg');
-        height: 70px;
 
-        @include mq-up('sp') {
-            display: none;
-
-            &.active {
-                padding: 0;
-                background-color: #F7F7F7;
-                display: block;
-                background-image: none;
-                position: relative;
-                height: 100vh;
-                overflow-x: hidden;
-            }
-        }
-
-        // .header-inner__menu-item
-        &-item {
-            &:not(:nth-child(4)){
-            margin-right: 30px;
-            }
-        }
+    // .header-inner__menu-item
+    &-item {
+      &:not(:nth-child(4)) {
+        margin-right: 30px;
+      }
     }
+  }
 }
 
 // メインコンテンツ
 // .content-inner
-.content-inner {
+
+.content {
+  &__inner {
     max-width: 1540px;
     padding: 0 50px;
     margin: 0 auto;
-}
-.content {
-    &__inner {
-        max-width: 1540px;
-        padding: 0 50px;
-        margin: 0 auto;
+
+    @include mq-up("sp") {
+      padding: 0px 20px;
     }
+  }
 }
 
 //タブラッパー
 .tab-switch {
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    max-width: 1000px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  max-width: 1000px;
+  margin: 0 auto;
 
-    // .tab-switch__item 
-    &__item {
-        width: 30%;
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
+  // .tab-switch__item
+  &__item {
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
 
-        &:first-child {
-            margin-right: 30px;
-        }
-
-        &.icon-web {
-            background-image: url('/assets/common/icon-app.svg');
-            background-repeat: no-repeat;
-            width: 30px;
-            height: 30px;
-            fill: red;
-            color: red;
-        }
-
-        &.icon-app {
-            background-image: url('/assets/common/icon-web.svg');
-            background-repeat: no-repeat;
-            width: 28px;
-            height: 28px;
-        }
-        
-        // .tab-switch__item.is-active 
-        &.is-active {
-            // background-color: #222e3e;
-            color: #fff;
-            border: none;
-        }
+    &:first-child {
+      margin-right: 30px;
     }
+
+    &.icon-web {
+      background-image: url("/assets/common/icon-app.svg");
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      fill: red;
+      color: red;
+    }
+
+    &.icon-app {
+      background-image: url("/assets/common/icon-web.svg");
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 28px;
+    }
+
+    // .tab-switch__item.is-active
+    &.is-active {
+      // background-color: #222e3e;
+      color: #fff;
+      border: none;
+    }
+  }
 }
 .tab-contents {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
 
-    // tab-contents__item
-    &__item-area{
-        display: none;
-        
-        // tab-contents__item.is-show
-        &.is-show {
-            margin-top: 50px;
-            display: block;
-        }
+  // tab-contents__item
+  &__item-area {
+    display: none;
+
+    // tab-contents__item.is-show
+    &.is-show {
+      margin-top: 50px;
+      display: block;
     }
+  }
 }
 .arrow-svg {
-    fill: red;
+  fill: red;
 }
 
 // フッター
 footer {
-    .footer-inner {
-        background-color: #F1F1F1;
-        padding: 30px 0;
+  .footer-inner {
+    background-color: #f1f1f1;
+    padding: 30px 0;
 
-        .icon-area {
-            display: flex;
-            justify-content: center;
+    .icon-area {
+      display: flex;
+      justify-content: center;
 
-            //.icon-area__item
-            &__item {
-                margin-right: 30px;
+      //.icon-area__item
+      &__item {
+        margin-right: 30px;
 
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
+        &:last-child {
+          margin-right: 0;
         }
-
-        .copyright {
-            margin-left: 50%;
-            margin-top: 50px;
-        }
+      }
     }
+
+    .copyright {
+      margin-left: 50%;
+      margin-top: 50px;
+    }
+  }
 }
-
-
