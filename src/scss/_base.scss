@@ -199,29 +199,16 @@ body {
 
   // .tab-switch__item
   &__item {
-    width: 30%;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-
     &:first-child {
       margin-right: 30px;
     }
 
     &.icon-web {
-      background-image: url("/assets/common/icon-app.svg");
-      background-repeat: no-repeat;
-      width: 30px;
-      height: 30px;
-      fill: red;
-      color: red;
+      //Webfont化済み/css/font-style.cssを参照
     }
 
     &.icon-app {
-      background-image: url("/assets/common/icon-web.svg");
-      background-repeat: no-repeat;
-      width: 28px;
-      height: 28px;
+      //Webfont化済み/css/font-style.cssを参照
     }
 
     // .tab-switch__item.is-active
@@ -236,6 +223,11 @@ body {
   font-size: 30px;
   text-align: center;
   margin-top: 50px;
+
+  // tab-contents__item-inner
+  &__item-inner {
+    margin-bottom: 60px;
+  }
 
   // tab-contents__item
   &__item-area {

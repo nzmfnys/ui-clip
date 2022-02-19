@@ -17,11 +17,6 @@
 		//.tab-area__contents-mainが付いている要素のindex番目にis-showクラスを付与
 		$('.tab-contents__item-area').eq(index).addClass('is-show');
 	});
-	//
-	// $('.test1').pagination({
-	// 	itemElement : '> .tab-contents__item-inner', // アイテムの要素
-	// 	displayItemCount: '5' //表示する数
-	// });
 
 	$(function() {
 		$('.hamburger').click(function() {

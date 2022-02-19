@@ -22,16 +22,10 @@
     font-size: 10px;
   }
 }
-//web用の見出し
-.service-name-web {
-  margin-bottom: 15px;
-  @extend .service-info__name;
-}
 
-//サムネイルエリア
+//サムネイルエリア APP
 .service-thmunail__app {
   display: flex;
-  margin-bottom: 60px;
 
   &-item {
     @include mq-up("sp") {
@@ -39,6 +33,48 @@
 
       &:first-child {
         margin-left: 20px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  @include mq-up("sp") {
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+  }
+}
+
+//web用の見出し
+.service-name-web {
+  margin-bottom: 15px;
+  @extend .service-info__name;
+}
+
+//サムネイルエリア APP
+.service-thmunail__web {
+  display: flex;
+  margin-bottom: 60px;
+
+  @include mq-up("sp") {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  &-item {
+    @include mq-up("sp") {
+      width: 45%;
+
+      // 最初のサムネイルだけWidth100%
+      &:first-child {
+        width: 100%;
+        margin-bottom: 1em;
       }
     }
 
