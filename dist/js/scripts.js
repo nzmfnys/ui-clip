@@ -52,22 +52,5 @@ $(function(){
 //リサイズした時に実行
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
+  });
 });
-});
-
-
-// $(document).ready(function() {
-//   $('.slider').slick({
-//     autoplay: true,
-//     dots: true,
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 3,
-//     responsive: [{
-//       breakpoint: 768,
-//       settings: {
-//         autoplay: false,
-//       }
-//     }]
-//   });
-// });
