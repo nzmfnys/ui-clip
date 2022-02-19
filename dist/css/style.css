@@ -392,6 +392,13 @@ body {
   font-size: 14px;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #f7f7f7;
+}
+
 .header-inner {
   padding: 10px 50px;
   margin: 0 auto 80px;
@@ -405,7 +412,7 @@ body {
 
 .header-inner__navi {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   list-style: none;
 }
@@ -425,7 +432,7 @@ body {
     display: block;
     position: fixed;
     z-index: 3;
-    right: 20px;
+    right: 30px;
     top: 12px;
     width: 60px;
     height: 60px;
@@ -495,12 +502,15 @@ body {
     display: none;
   }
   .header-inner__menu.active {
-    padding: 0;
-    background-color: #f7f7f7;
-    display: block;
-    background-image: none;
-    position: relative;
+    position: fixed;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
     height: 100vh;
+    display: block;
+    padding: 0;
+    background-color: red;
+    background-image: none;
     overflow-x: hidden;
   }
 }
