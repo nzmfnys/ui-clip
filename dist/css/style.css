@@ -9,6 +9,7 @@
    # ================================================================= */
 @import url(//fonts.googleapis.com/earlyaccess/notosansrunic.css);
 @import url(//fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap");
 html {
   box-sizing: border-box;
   overflow-y: scroll;
@@ -427,6 +428,10 @@ header {
   background-image: url("/assets/common/navigation-pc-top.svg");
 }
 
+.header-inner__navi-link .hamburger {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .header-inner__navi-link .hamburger {
     display: block;
@@ -500,6 +505,7 @@ header {
 @media screen and (max-width: 767px) {
   .header-inner__menu {
     display: none;
+    padding-top: 5em;
   }
   .header-inner__menu.active {
     position: fixed;
@@ -508,8 +514,7 @@ header {
     width: 100vw;
     height: 100vh;
     display: block;
-    padding: 0;
-    background-color: red;
+    background-color: #f7f7f7;
     background-image: none;
     overflow-x: hidden;
   }
@@ -517,6 +522,37 @@ header {
 
 .header-inner__menu-item:not(:nth-child(4)) {
   margin-right: 30px;
+}
+
+.header-inner__menu-item:not(:nth-child(4)) .icons-items {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header-inner__menu-item:not(:nth-child(4)) {
+    margin-right: 0;
+  }
+  .header-inner__menu-item:not(:nth-child(4)) .icons-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header-inner__menu-item:not(:nth-child(4)) .icons-items li {
+    width: 30%;
+  }
+  .header-inner__menu-item:not(:nth-child(4)) .icons-items li:nth-child(4) {
+    width: 100%;
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-inner__menu-item {
+    padding: 0.5em 0;
+    margin-right: 0;
+    text-align: center;
+    font-size: 2rem;
+  }
 }
 
 .content__inner {
@@ -576,13 +612,37 @@ footer .footer-inner {
   padding: 30px 0;
 }
 
+@media screen and (max-width: 767px) {
+  footer .footer-inner {
+    padding: 50px 0 30px;
+  }
+}
+
 footer .footer-inner .icon-area {
   display: flex;
   justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  footer .footer-inner .icon-area {
+    flex-wrap: wrap;
+  }
+}
+
 footer .footer-inner .icon-area__item {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-inner .icon-area__item {
+    width: 20%;
+    margin-right: 0;
+    text-align: center;
+  }
+  footer .footer-inner .icon-area__item:nth-child(4) {
+    width: 100%;
+    margin-top: 1.5em;
+  }
 }
 
 footer .footer-inner .icon-area__item:last-child {
@@ -592,6 +652,13 @@ footer .footer-inner .icon-area__item:last-child {
 footer .footer-inner .copyright {
   margin-left: 50%;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-inner .copyright {
+    margin: 2em 0 0;
+    text-align: center;
+  }
 }
 
 .service-info {

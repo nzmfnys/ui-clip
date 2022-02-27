@@ -1,4 +1,7 @@
 
+/*
+  APP・WEBタブの切り替え
+*/
   $(function() {
 	  //クリックしたらイベント発火
 	$('.tab-switch__item').click(function(){
@@ -18,6 +21,9 @@
 		$('.tab-contents__item-area').eq(index).addClass('is-show');
 	});
 
+/*
+  バーガーメニューの開閉
+*/
 	$(function() {
 		$('.hamburger').click(function() {
 			$(this).toggleClass('active');
@@ -30,7 +36,10 @@
 	});
 });
 
-//SlickSlider
+/*
+  APPタブのカルーセル
+  SPの時だけイベントを発火させる
+*/
 $(function(){
   $('.slider').slick({
     mobileFirst: true,
@@ -46,6 +55,13 @@ $(function(){
 
 //リサイズした時に実行
 $(window).on('resize orientationchange', function() {
-  $('.slider').slick('resize');
+    $('.slider').slick('resize');
+    
+    if ($('.hamburger').css('display') == 'block') {
+      console.log('OK')
+    } else {
+    console.log('NG')
+    }
   });
 });
+
