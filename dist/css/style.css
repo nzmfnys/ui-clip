@@ -536,13 +536,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 1em;
   }
   .header-inner__menu-item:not(:nth-child(4)) .icons-items li {
     width: 30%;
   }
   .header-inner__menu-item:not(:nth-child(4)) .icons-items li:nth-child(4) {
     width: 100%;
-    margin-top: 0.5em;
+    margin-top: 1em;
   }
 }
 
@@ -668,6 +669,12 @@ footer .footer-inner .copyright {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+@media screen and (max-width: 767px) {
+  .service-info {
+    margin-bottom: 0.5em;
+  }
+}
+
 .service-info dt {
   margin-right: 20px;
 }
@@ -755,14 +762,63 @@ footer .footer-inner .copyright {
 }
 
 .advertisement-area {
+  position: relative;
   margin: 120px calc(50% - 50vw);
   width: 100vw;
   padding: 10px 0;
-  background-color: red;
 }
 
 .advertisement-area__add-book {
+  margin-bottom: 1em;
+  padding-bottom: 1.5em;
   background-color: #f1f1f1;
+}
+
+.advertisement-area__banner {
+  padding: 1em;
+}
+
+.advertisement-area img {
+  width: 100%;
+  max-width: 728px;
+}
+
+.book-title {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+}
+
+.book-title__text {
+  font-size: 1rem;
+}
+
+.book-banner {
+  display: flex;
+}
+
+.book-banner__item {
+  width: 100%;
+  max-width: 196px;
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+  .book-banner__item {
+    padding: 0.5em;
+  }
+}
+
+.book-banner.slick-slider {
+  top: 30px !important;
+}
+
+.slick-dots li {
+  margin: 0 !important;
+}
+
+.slick-dots li button::before {
+  font-size: 65px !important;
 }
 
 .pagenation {

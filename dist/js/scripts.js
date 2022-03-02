@@ -53,6 +53,27 @@ $(function(){
     } ]
 });
 
+/* 
+  広告用のカルーセル
+  PC/SP共通のため、↑のカルーセルと処理を分けた
+*/
+$('.slick-add').slick({
+  autoplay: false,
+  dots: true,
+  centerMode: true,
+  slidesToShow: 1,
+  slidesToScroll: 3,
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1, //画面幅750px以下でスライド3枚表示
+      }
+    }
+  ]  
+})
+
 //リサイズした時に実行
 $(window).on('resize orientationchange', function() {
     $('.slider').slick('resize');
