@@ -231,6 +231,10 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 2em;
+
+    @include mq-up("sp") {
+      justify-content: space-between;
+    }
   }
 }
 
@@ -271,6 +275,11 @@
 .contents-thumnail {
   margin-bottom: 1em;
   margin-right: 1em;
+
+  @include mq-up("sp") {
+    width: 48%;
+    margin-right: 0;
+  }
   & img {
     width: 100%;
   }

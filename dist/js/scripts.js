@@ -42,8 +42,10 @@
 */
 $(function(){
   $('.slider').slick({
+    infinite: true,
     mobileFirst: true,
     slidesToShow: 1,
+    centerMode: true,
     slidesToScroll: 1,
 
     //768px以下の時はslickを実行しない

@@ -877,6 +877,12 @@ footer .footer-inner .copyright {
   margin-bottom: 2em;
 }
 
+@media screen and (max-width: 767px) {
+  .detail-contents__thumnail {
+    justify-content: space-between;
+  }
+}
+
 .overview-text {
   color: #3b4043;
   font-size: 14px;
@@ -907,6 +913,13 @@ footer .footer-inner .copyright {
 .contents-thumnail {
   margin-bottom: 1em;
   margin-right: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .contents-thumnail {
+    width: 48%;
+    margin-right: 0;
+  }
 }
 
 .contents-thumnail img {
