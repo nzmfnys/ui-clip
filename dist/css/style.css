@@ -608,6 +608,86 @@ header {
   fill: red;
 }
 
+.about-content__heading {
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .about-content__heading {
+    font-size: 32px;
+  }
+}
+
+.about-content__heading-policy {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about-content__buttons {
+  display: flex;
+  margin: 25px 0 60px;
+}
+
+.about-content__buttons-twitter {
+  margin-right: 10px;
+}
+
+.about-content__policy {
+  margin-bottom: 100px;
+}
+
+.about-content__policy-items {
+  text-indent: -20px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  line-height: 1.5;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.books-content {
+  max-width: 896px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.books-content__heading {
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .books-content__heading {
+    font-size: 32px;
+  }
+}
+
+.books-content__books-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.books-content__books-list-items {
+  max-width: 196px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .books-content__books-list-items {
+    max-width: 145px;
+    margin-right: 0;
+  }
+}
+
+.books-content__books-list-items img {
+  width: 100%;
+}
+
 footer .footer-inner {
   background-color: #f1f1f1;
   padding: 30px 0;
