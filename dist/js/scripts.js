@@ -76,6 +76,14 @@ $('.slick-add').slick({
   ]  
 })
 
+$('.slick-modal').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+})
+
 //リサイズした時に実行
 $(window).on('resize orientationchange', function() {
     $('.slider').slick('resize');
@@ -88,3 +96,14 @@ $(window).on('resize orientationchange', function() {
   });
 });
 
+// モーダル
+$(function(){
+  $('.is-modal-open').on('click',function(){
+      $('.modal').fadeIn();
+      return false;
+  });
+  $('.is-modal-close').on('click',function(){
+      $('.modal').fadeOut();
+      return false;
+  });
+});

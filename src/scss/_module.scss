@@ -1,6 +1,9 @@
 /*
   TOPページ用スタイル
 */
+// * {
+//   border: 1px solid red;
+// }
 
 //サービス情報
 .service-info {
@@ -42,6 +45,9 @@
   display: flex;
 
   &-item {
+    @include mq-up("pc") {
+      cursor: pointer;
+    }
     @include mq-up("sp") {
       max-width: 225px;
 
@@ -284,3 +290,128 @@
     width: 100%;
   }
 }
+
+/*
+  トップモーダル
+*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-y: scroll;
+  background-color: #F7F7F7;
+
+  // .modal-content
+  &-content {
+    // width: 500px;
+    height: 100vh;
+    margin: 0 auto 0;
+
+    // .modal-content__inner
+    &__inner {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+      @include mq-up("sp") {
+        flex-direction: column;
+      }
+      
+      //.modal-content__inner-slider
+      &-slider {
+        flex-grow: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          margin: 0 20px;
+        }
+
+        // slick用
+        @include mq-up('pc') {
+          .slick-list {
+            width: 500px;
+            margin: 0 auto;
+          }
+        }
+
+        @include mq-up("sp") {
+          padding: 20% 10% 10%;
+        }
+      }
+
+      // .modal-content__inner-app-information
+      &-app-information {
+        max-width: 33%;
+        height: 100vh;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-right: 10px;
+        padding-left: 30px;
+        background-color: #fff;
+        
+        @include mq-up("sp") {
+          max-width: 100%;
+          height: auto;
+          padding: 10% 5% 10%;
+        }
+
+        // .app-information__service
+        .app-information__service {
+
+        }
+
+        // .app-information__tags
+        .app-information__tags {
+
+          // .app-information__tags-list
+          &-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            // .app-information__tags-list-item
+            &-item {
+              display: flex;
+              justify-content: center;
+              flex-grow: 1;
+              margin: 5px 10px 5px 0;
+              padding: 10px 20px;
+              background: #F7F7F7;
+              border-radius: 20px;
+              box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+
+              // .list-item
+              .list-item {
+                font-size: 10px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  &-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    max-width: 60px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
