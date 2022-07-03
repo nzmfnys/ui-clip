@@ -2,7 +2,8 @@
 
 .slick-slider {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -69,7 +70,7 @@
         float: right;
     }
     img {
-        display: block;
+        display: inline-block;
     }
     &.slick-loading img {
         display: none;
