@@ -398,6 +398,37 @@
 
         }
       }
+
+      // .slick-prev
+      .slick-arrow {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin: 0 10px;
+        transform: rotate(45deg);
+      }
+
+      // .slick-prev
+      .slick-prev {
+        left: 40px;
+        border-left: 2px solid #333;
+        border-bottom: 2px solid #333;
+
+        &::before {
+          content: none; // デフォルト矢印を打ち消し
+        }        
+      }
+
+      // .slick-next
+      .slick-next {
+        right: 15px;
+        border-top: 2px solid #333;
+        border-right: 2px solid #333;
+
+        &::before {
+          content: none; // デフォルト矢印を打ち消し
+        }
+      }
     }
   }
 

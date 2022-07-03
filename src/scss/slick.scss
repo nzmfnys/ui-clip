@@ -99,3 +99,13 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.slick-prev {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+    transform: rotate(45deg);
+}

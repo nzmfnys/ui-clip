@@ -77,7 +77,7 @@ $('.slick-add').slick({
 })
 
 $('.slick-modal').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1,

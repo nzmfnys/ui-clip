@@ -1110,6 +1110,34 @@ footer .footer-inner .copyright {
   font-size: 10px;
 }
 
+.modal-content__inner .slick-arrow {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+  transform: rotate(45deg);
+}
+
+.modal-content__inner .slick-prev {
+  left: 40px;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+.modal-content__inner .slick-prev::before {
+  content: none;
+}
+
+.modal-content__inner .slick-next {
+  right: 15px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+}
+
+.modal-content__inner .slick-next::before {
+  content: none;
+}
+
 .modal-close {
   position: absolute;
   top: 10px;
