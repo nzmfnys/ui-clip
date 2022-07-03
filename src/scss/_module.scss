@@ -114,13 +114,19 @@
 
 //広告エリア
 .advertisement-area {
+  // position: relative;
+  // margin: 120px calc(50% - 50vw);
+  // width: 100vw;
+  // padding: 10px 0;
   position: relative;
-  margin: 120px calc(50% - 50vw);
+  left: 49%;
   width: 100vw;
-  padding: 10px 0;
+  margin: 120px 0;
+  transform: translateX(-50%);
+  overflow: hidden;
 
   @include mq-up("sp") {
-    margin: 1em calc(50% - 50vw);
+    margin: 1em 0;
   }
 
   &__add-book {
@@ -302,9 +308,12 @@
   top: 0;
   height: 100%;
   width: 100%;
-  // overflow-y: hidden;
-  // overflow-y: scroll;
+  overflow-y: scroll;
   background-color: #F7F7F7;
+
+  @include mq-up("pc") {
+    overflow-y: hidden;
+  }
 
   // .modal-content
   &-content {
@@ -410,9 +419,16 @@
 
       // .slick-prev
       .slick-prev {
-        left: 40px;
         border-left: 2px solid #333;
         border-bottom: 2px solid #333;
+
+        @include mq-up("pc") {
+          left: 40px;
+        }
+
+        @include mq-up("sp") {
+          left: 10px;
+        }        
 
         &::before {
           content: none; // デフォルト矢印を打ち消し
@@ -424,6 +440,14 @@
         right: 15px;
         border-top: 2px solid #333;
         border-right: 2px solid #333;
+
+        @include mq-up("pc") {
+          right: 15px;
+        }
+
+        @include mq-up("sp") {
+          right: 10px;
+        }           
 
         &::before {
           content: none; // デフォルト矢印を打ち消し
