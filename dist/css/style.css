@@ -379,6 +379,10 @@ ul li {
 }
 
 a {
+  color: #000;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -508,16 +512,18 @@ header {
     padding-top: 5em;
   }
   .header-inner__menu.active {
-    position: fixed;
     left: 0;
-    z-index: 10;
-    width: 100vw;
+    z-index: 2;
     height: 100vh;
     display: block;
     background-color: #f7f7f7;
     background-image: none;
     overflow-x: hidden;
   }
+}
+
+.header-inner__menu-item {
+  font-family: "Crimson Text", serif;
 }
 
 .header-inner__menu-item:not(:nth-child(4)) {
