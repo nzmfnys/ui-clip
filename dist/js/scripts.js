@@ -53,6 +53,18 @@ $(function(){
       breakpoint: 768,
       settings: 'unslick'
     } ]
+  });
+});
+
+//リサイズした時に実行
+$(window).on('resize orientationchange', function() {
+  $('.slider').slick('resize');
+  
+  if ($('.hamburger').css('display') == 'block') {
+    console.log('OK')
+  } else {
+  console.log('NG')
+  }
 });
 
 /* 
@@ -61,10 +73,10 @@ $(function(){
 */
 $('.slick-add').slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
-  slidesToShow: 8,
-  slidesToScroll: 8,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
@@ -102,18 +114,6 @@ $('.slick-modal').slick({
   slidesToShow: 1,
   adaptiveHeight: true
 })
-
-//リサイズした時に実行
-$(window).on('resize orientationchange', function() {
-    $('.slider').slick('resize');
-    
-    if ($('.hamburger').css('display') == 'block') {
-      console.log('OK')
-    } else {
-    console.log('NG')
-    }
-  });
-});
 
 // モーダル
 $(function(){
