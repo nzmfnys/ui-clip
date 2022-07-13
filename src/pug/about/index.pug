@@ -4,7 +4,7 @@ html(lang="ja")
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(name="description", content="120文字以内で記載する")
+    meta(name="description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「About」ページです。")
     meta(name="keywords", content="*****,*****,*****,*****,*****")
     meta(name="author", content="")
     meta(property="og:title", content="タイトル")
@@ -12,9 +12,12 @@ html(lang="ja")
     meta(property="og:url", content="http://任意のURL")
     meta(property="og:image", content="http://任意のURL/og_image.png")
     meta(property="og:site_name", content="")
-    meta(property="og:description", content="")
+    meta(property="og:description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「About」ページです。")
     meta(property="fb:app_id", content="任意のID")
-    title ABOUT
+    title About | UI Clip | UIデザインギャラリー
+    link(rel='shortcut icon', href="/assets/common/favicon.png")
+    link(rel='shortcut icon', href="/assets/common/apple-touch-icon.png")
+    link(rel='shortcut icon', href="/assets/common/android-chrome-192x192.png")    
     link(rel='stylesheet', href="../css/font-style.css")
     link(rel='stylesheet', href="../css/style.css")
     link(rel='stylesheet', href="../css/slick.css")
@@ -39,7 +42,8 @@ html(lang="ja")
       .header-inner
         ul.header-inner__navi
           li.header-inner__logo
-            img(src="/assets/common/logo.svg" alt="UICLIP") 
+            a(href="/")
+              img(src="/assets/common/logo.svg" alt="UICLIP")
           li.header-inner__navi-link
             //- バーガーメニュー
             .hamburger
@@ -48,10 +52,14 @@ html(lang="ja")
                 span.hamburger__lineMiddle
                 span.hamburger__lineBottom
             ul.header-inner__menu
-              li.header-inner__menu-item About
-              li.header-inner__menu-item Category
-              li.header-inner__menu-item Blog
-              li.header-inner__menu-item Books
+              li.header-inner__menu-item
+                a(href="/about") About
+              li.header-inner__menu-item 
+                a(href="/") Category
+              li.header-inner__menu-item 
+                a(href="/") Blog
+              li.header-inner__menu-item 
+                a(href="/books") Books
               li.header-inner__menu-item.icons
                 ul.icons-items
                   li
