@@ -185,6 +185,7 @@ header {
     // .header-inner__menu-item
     &-item {
       font-family: $en-font;
+      flex: 1 1 auto; 
       &:not(:nth-child(4)) {
         margin-right: 30px;
 

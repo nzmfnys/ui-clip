@@ -529,6 +529,7 @@ header {
 
 .header-inner__menu-item {
   font-family: "Crimson Text", serif;
+  flex: 1 1 auto;
 }
 
 .header-inner__menu-item:not(:nth-child(4)) {
