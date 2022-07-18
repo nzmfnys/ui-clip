@@ -51,6 +51,7 @@ html(lang="ja")
                 span.hamburger__lineTop
                 span.hamburger__lineMiddle
                 span.hamburger__lineBottom
+            .background-navi
             ul.header-inner__menu
               li.header-inner__menu-item
                 a(href="/about") About
@@ -63,17 +64,17 @@ html(lang="ja")
               li.header-inner__menu-item.icons
                 ul.icons-items
                   li
-                    a(href="https://twitter.com/uiclip" target="_blank")
-                      img(src="/assets/common/icon-twitter.png" alt="twitter")
+                    a.icons-items__link(href="https://twitter.com/uiclip" target="_blank")
+                      img.icons-items__link-icon(src="/assets/common/icon-twitter.svg" alt="twitter")
                   li
-                    a(href="https://www.facebook.com/uiclip" target="_blank")
-                      img(src="/assets/common/icon-facebook.png" alt="facebook")
+                    a.icons-items__link(href="https://www.facebook.com/uiclip" target="_blank")
+                      img.icons-items__link-icon(src="/assets/common/icon-facebook.svg" alt="facebook")
                   li
-                    a(href="example.com")
-                      img(src="/assets/common/icon-rss.png" alt="rss") 
+                    a.icons-items__link(href="example.com" target="_blank")
+                      img(src="/assets/common/icon-rss.svg" alt="rss" class="icons-items__link-icon")
                   li
                     a(href="https://www.buymeacoffee.com/uiclip")
-                      img(src="/assets/common/banner-coffee.png" alt="buy me a coffee")             
+                      img(src="/assets/common/banner-coffee.svg" alt="buy me a coffee")             
     section.content
       .content__inner
           //-　APPコンテンツ
