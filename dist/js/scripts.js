@@ -80,7 +80,7 @@ window.addEventListener("load", function() {
     dots: true,
     // centerMode: true,
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 4,
     centeredSlides: true,
     loop: true,
     loopAdditionalSlides: 1,
