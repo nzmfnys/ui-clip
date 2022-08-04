@@ -47,6 +47,8 @@
   &-item {
     @include mq-up("pc") {
       cursor: pointer;
+      max-width: 225px;
+      width: 100%;
 
       &:hover {
         opacity: 0.7;

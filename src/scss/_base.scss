@@ -88,7 +88,7 @@ header {
       position: absolute;
       z-index: 0;
       background: #fff;
-      width: 320px;
+      width: 235px;
       height: 63px;
       border-radius: 50px;
       top: 15px;
@@ -109,7 +109,7 @@ header {
         display: block;
         position: fixed;
         z-index: 3;
-        right: 30px;
+        right: 10px;
         top: 12px;
         width: 60px;
         height: 60px;
@@ -209,7 +209,7 @@ header {
       font-family: $en-font;
       flex: 1 1 auto; 
 
-      &:not(:nth-child(4)) {
+      &:not(:nth-child(3)) {
         margin-right: 30px;
 
         .icons-items {
