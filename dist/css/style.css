@@ -1117,6 +1117,7 @@ footer .footer-inner .copyright {
 .contents-thumnail {
   margin-bottom: 1em;
   margin-right: 1em;
+  max-width: 225px;
 }
 
 @media screen and (max-width: 767px) {

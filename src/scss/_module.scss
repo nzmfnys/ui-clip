@@ -293,6 +293,7 @@
 .contents-thumnail {
   margin-bottom: 1em;
   margin-right: 1em;
+  max-width: 225px;
 
   @include mq-up("sp") {
     width: 48%;
