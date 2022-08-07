@@ -41,9 +41,10 @@
 }
 
 //サムネイルエリア APP
-.service-thmunail__app {
+.service-thumbnail__app {
   display: flex;
 
+  // .service-thumbnail__app-item
   &-item {
     @include mq-up("pc") {
       cursor: pointer;
@@ -59,6 +60,7 @@
 
       &:first-child {
         margin-left: 20px;
+        margin-right: 20px;
       }
     }
 
@@ -83,7 +85,7 @@
 }
 
 //サムネイルエリア APP
-.service-thmunail__web {
+.service-thumbnail__web {
   display: flex;
   margin-bottom: 60px;
 
@@ -120,10 +122,6 @@
 
 //広告エリア
 .advertisement-area {
-  // position: relative;
-  // margin: 120px calc(50% - 50vw);
-  // width: 100vw;
-  // padding: 10px 0;
   position: relative;
   left: 49%;
   width: 100vw;
