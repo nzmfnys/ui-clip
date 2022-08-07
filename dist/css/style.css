@@ -406,7 +406,7 @@ header {
 }
 
 .header-inner {
-  padding: 20px 50px 0;
+  padding: 30px 50px 0;
   margin: 0 auto 80px;
 }
 
@@ -430,6 +430,12 @@ header {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header-inner__logo img {
+    max-width: 100px;
+  }
+}
+
 .header-inner__navi-link .background-navi {
   position: absolute;
   z-index: 0;
@@ -437,7 +443,7 @@ header {
   width: 235px;
   height: 63px;
   border-radius: 50px;
-  top: 15px;
+  top: 25px;
   right: 53px;
 }
 
@@ -583,9 +589,14 @@ header {
     margin-top: 2em;
   }
   .header-inner__menu-item:not(:nth-child(3)) .icons-items li:nth-child(4) a {
-    padding: 0.55em 1.0em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em 1em;
     background: #fff;
-    border-radius: 0.5em;
+    border-radius: 0.35em;
+    align-items: center;
+    align-content: center;
+    max-width: 142px;
   }
   .header-inner__menu-item:not(:nth-child(3)) .icons-items__link {
     position: absolute;
