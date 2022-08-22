@@ -4,22 +4,22 @@
 */
   $(function() {
 	  //クリックしたらイベント発火
-	$('.tab-switch__item').click(function(){
-		// デフォルト.is-activeクラスを削除
-		$('.is-active').removeClass('is-active');
+	// $('.tab-switch__item').click(function(){
+	// 	// デフォルト.is-activeクラスを削除
+	// 	$('.is-active').removeClass('is-active');
 
-		//クリックしたタブにis-activeのクラス付与
-		$(this).addClass('is-active');
+	// 	//クリックしたタブにis-activeのクラス付与
+	// 	$(this).addClass('is-active');
 
-		// デフォルト.is-show'クラスを削除
-		$('.is-show').removeClass('is-show');
+	// 	// デフォルト.is-show'クラスを削除
+	// 	$('.is-show').removeClass('is-show');
 		
-		//クリックしたタブがタブの中で何番目かを判定し、indexとして定義
-		const index = $(this).index();
+	// 	//クリックしたタブがタブの中で何番目かを判定し、indexとして定義
+	// 	const index = $(this).index();
 		
-		//.tab-area__contents-mainが付いている要素のindex番目にis-showクラスを付与
-		$('.tab-contents__item-area').eq(index).addClass('is-show');
-	});
+	// 	//.tab-area__contents-mainが付いている要素のindex番目にis-showクラスを付与
+	// 	$('.tab-contents__item-area').eq(index).addClass('is-show');
+	// });
 
 /*
   バーガーメニューの開閉
@@ -36,39 +36,68 @@
 	});
 });
 
+/* APPタブのカルーセル SPの時だけイベントを発火させる */
+function checkBreakPoint() {
+	w = $(window).width();
+	if (w <= 767) {
+		// スマホ向け（767px以下のとき）
+		$('.slider-thumbnail').not('.slick-initialized').slick({
+			//スライドさせる
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			autoplay: false,
+			autoplaySpeed: 6000,
+      infinite: false,
+      centerMode: false,
+		});
+	} else {
+		// PC向け
+		$('.slider.slick-initialized').slick('unslick');
+	}
+}
+// ウインドウがリサイズする度にチェック
+$(window).resize(function(){
+	checkBreakPoint();
+});
+// 初回チェック
+checkBreakPoint();
+
 
 
 //リサイズした時に実行
-$(window).on('resize orientationchange', function() {
-  $('.slider').slick('resize');
+// $(window).on('resize orientationchange', function() {
+//   $('.slider').slick('resize');
   
-  if ($('.hamburger').css('display') == 'block') {
-    console.log('OK')
-  } else {
-  console.log('NG')
-  }
-});
+//   if ($('.hamburger').css('display') == 'block') {
+//     console.log('OK')
+//   } else {
+//   console.log('NG')
+//   }
+// });
 
 window.addEventListener("load", function() {
   /* APPタブのカルーセル SPの時だけイベントを発火させる */
-  $('.slider').slick({
-    infinite: true,
-    mobileFirst: true,
-    slidesToShow: 1,
-    centerMode: true,
-    slidesToScroll: 1,
+  // $('.slider').slick({
+  //   infinite: true,
+  //   mobileFirst: true,
+  //   slidesToShow: 1,
+  //   centerMode: false,
+  //   slidesToScroll: 1,
+  //   initialSlide: 0,
 
-    //768px以下の時はslickを実行しない
-    responsive: [ {
-      breakpoint: 768,
-      settings: 'unslick'
-    } ]
-  });
+  //   //768px以下の時はslickを実行しない
+  //   responsive: [ {
+  //     breakpoint: 768,
+
+  //     settings: 'unslick',
+  //   } ]
+  // });
+  
   /* 広告用のカルーセル PC/SP共通のため、↑のカルーセルと処理を分けた */
   $('.slick-add').slick({
     autoplay: false,
     autoplaySpeed: 0,
-    // speed: 8000,
     cssEase: 'linear',
     arrows:false,
     swipe: false,
@@ -114,6 +143,7 @@ window.addEventListener("load", function() {
 
 
 
+
 // $('.slick-add').slick({
 //   dots: true,
 //   infinite: true,
@@ -148,11 +178,20 @@ window.addEventListener("load", function() {
 // })
 
 $('.slick-modal').slick({
-  dots: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true
+  // lazyLoad: ondemand,
+    // infinite: true,
+    // mobileFirst: true,
+    // slidesToShow: 1,
+    // centerMode: true,
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
+    // centerPadding: "50px",
+    // initialSlide: 0,  
+  // dots: false,
+  // infinite: true,
+  // speed: 300,
+  // slidesToShow: 1,
+  // adaptiveHeight: true
 })
 
 // モーダル
