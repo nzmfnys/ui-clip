@@ -363,6 +363,9 @@ header {
 
 //About
 .about-content {
+  max-width: 896px;
+  width: auto;
+  margin: 0 auto 120px;
   &__heading {
     font-family: $en-font;
     font-size: $en-hedding01;
@@ -402,7 +405,6 @@ header {
   // .about-content__policy
 
   &__policy {
-    margin-bottom: 100px;
     &-items {
       text-indent: -20px;
       padding-left: 20px;
@@ -418,7 +420,7 @@ header {
 .books-content {
   max-width: 896px;
   width: auto;
-  margin: 0 auto;
+  margin: 0 auto 90px;
 
   // .books-content__heading
   &__heading {
