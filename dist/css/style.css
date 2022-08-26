@@ -743,6 +743,16 @@ header {
   }
 }
 
+.books-content__books {
+  padding-bottom: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .books-content__books {
+    padding-bottom: 90px;
+  }
+}
+
 .books-content__books-list {
   display: flex;
   justify-content: space-around;
@@ -1029,14 +1039,17 @@ footer .footer-inner .copyright {
   position: absolute;
   top: 3%;
   left: 5%;
+  margin-bottom: 1rem;
 }
 
 .book-title__text {
-  font-size: 1rem;
+  font-family: "Crimson Text", serif;
+  font-size: 22px;
 }
 
 .book-banner {
   display: flex;
+  padding-top: 25px;
 }
 
 .book-banner__item {
@@ -1058,6 +1071,10 @@ footer .footer-inner .copyright {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-align: left;
+}
+
+.banner-add {
+  width: 100%;
 }
 
 .book-banner.slick-slider {

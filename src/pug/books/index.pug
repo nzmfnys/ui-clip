@@ -95,64 +95,10 @@ html(lang="ja")
               li.books-content__books-list-items
                 a(href="example.com")
                 img(src="/assets/books/item-books-04.jpg" alt="books04")
-            //-　AmazonBannerエリア
-            .advertisement-area 
-              .advertisement-area__add-book
-                .book-title
-                  p.book-title__text Books
-                ul.book-banner.slick-add
-                  //- li.book-banner__item ddd
-                  - 
-                    var list = [
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテスト",
-                      },                                            
-                                                                                                                    
-                    ]
-                  each item in list
-                    li.book-banner__item
-                      img(src=item.imgSrc alt="item.altName" loading="lazy")
-                      span.book-banner__item-text #{item.text}
 
-              .advertisement-area__banner
-                img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
+          //-　Bannerエリア
+          .advertisement-area__banner
+            img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
 
     //- footer (SNS、コピーライト)
     //- script もfooterの中に記述 

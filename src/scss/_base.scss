@@ -441,6 +441,11 @@ header {
   // .books-content__books
   &__books {
     
+    padding-bottom: 70px;
+
+    @include mq-up("pc") {
+      padding-bottom: 90px;
+    }
 
     &-list {
       display: flex;
