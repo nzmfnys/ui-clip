@@ -417,7 +417,7 @@ header {
   }
 }
 
-.header-inner__navi {
+.header-inner__nav {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -425,7 +425,7 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  .header-inner__navi {
+  .header-inner__nav {
     display: block;
   }
 }
@@ -436,29 +436,33 @@ header {
   }
 }
 
-.header-inner__navi-link .background-navi {
+.header-inner__nav-link .nav__inner {
+  position: relative;
+}
+
+.header-inner__nav-link .background-nav {
   position: absolute;
   z-index: 0;
   background: #fff;
-  width: 235px;
-  height: 63px;
+  width: 100%;
+  height: 55px;
   border-radius: 50px;
-  top: 25px;
-  right: 53px;
+  top: -4px;
+  right: 4px;
 }
 
 @media screen and (max-width: 767px) {
-  .header-inner__navi-link .background-navi {
+  .header-inner__nav-link .background-nav {
     display: none;
   }
 }
 
-.header-inner__navi-link .hamburger {
+.header-inner__nav-link .hamburger {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
-  .header-inner__navi-link .hamburger {
+  .header-inner__nav-link .hamburger {
     display: block;
     position: fixed;
     z-index: 3;
@@ -470,12 +474,12 @@ header {
     text-align: center;
     background-image: url("/assets/common/hamburger-bg.png");
   }
-  .header-inner__navi-link .hamburger-inner {
+  .header-inner__nav-link .hamburger-inner {
     position: absolute;
     top: 8px;
     left: 15px;
   }
-  .header-inner__navi-link .hamburger span {
+  .header-inner__nav-link .hamburger span {
     display: block;
     position: absolute;
     width: 18px;
@@ -486,16 +490,16 @@ header {
     -moz-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
-  .header-inner__navi-link .hamburger__lineTop {
+  .header-inner__nav-link .hamburger__lineTop {
     top: 10px;
   }
-  .header-inner__navi-link .hamburger__lineMiddle {
+  .header-inner__nav-link .hamburger__lineMiddle {
     top: 20px;
   }
-  .header-inner__navi-link .hamburger__lineBottom {
+  .header-inner__nav-link .hamburger__lineBottom {
     top: 30px;
   }
-  .header-inner__navi-link .hamburger.active .hamburger__lineTop {
+  .header-inner__nav-link .hamburger.active .hamburger__lineTop {
     top: 21px;
     left: 6px;
     background: #191919;
@@ -503,14 +507,14 @@ header {
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  .header-inner__navi-link .hamburger.active .hamburger__lineMiddle {
+  .header-inner__nav-link .hamburger.active .hamburger__lineMiddle {
     top: 21px;
     background: #191919;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  .header-inner__navi-link .hamburger.active .hamburger__lineBottom {
+  .header-inner__nav-link .hamburger.active .hamburger__lineBottom {
     top: 21px;
     background: #191919;
     -webkit-transform: rotate(45deg);
@@ -527,6 +531,7 @@ header {
   background: #F7F7F7;
   border-radius: 50px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  height: 51px;
 }
 
 @media screen and (min-width: 768px) {

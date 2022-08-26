@@ -1,0 +1,38 @@
+.header-inner
+  ul.header-inner__nav
+    li.header-inner__logo
+      a(href="/")
+        img(src="/assets/common/logo.svg" alt="UICLIP") 
+    li.header-inner__nav-link
+      //- バーガーメニュー
+      .hamburger
+        .hamburger-inner
+          span.hamburger__lineTop
+          span.hamburger__lineMiddle
+          span.hamburger__lineBottom
+          
+      .nav__inner
+        .background-nav
+        ul.header-inner__menu
+          li.header-inner__menu-item
+            a(href="/about") About
+          //- li.header-inner__menu-item 
+          //-   a(href="/") Category
+          li.header-inner__menu-item 
+            a(href="/") Blog
+          li.header-inner__menu-item 
+            a(href="/books") Books
+          li.header-inner__menu-item.icons
+            ul.icons-items
+              li
+                a.icons-items__link(href="https://twitter.com/uiclip" target="_blank")
+                  img.icons-items__link-icon(src="/assets/common/icon-twitter.svg" alt="twitter")
+              li
+                a.icons-items__link(href="https://www.facebook.com/uiclip" target="_blank")
+                  img.icons-items__link-icon(src="/assets/common/icon-facebook.svg" alt="facebook")
+              li
+                a.icons-items__link(href="example.com" target="_blank")
+                  img(src="/assets/common/icon-rss.svg" alt="rss" class="icons-items__link-icon")
+              li
+                a(href="https://www.buymeacoffee.com/uiclip")
+                  img(src="/assets/common/banner-coffee.svg" alt="buy me a coffee")          
