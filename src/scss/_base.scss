@@ -121,59 +121,64 @@ header {
       .hamburger {
         display: block;
         position: fixed;
-        z-index: 3;
-        right: 10px;
-        top: 12px;
-        width: 60px;
-        height: 60px;
-        cursor: pointer;
-        text-align: center;
-        background-image: url("/assets/common/hamburger-bg.png");
+        z-index: 5;
+        right: 20px;
+        top: 10px;
+        width: 55px;
+        height: 55px;
+        border-radius: 55px;
+        background: #fff;
+
         &-inner {
           position: absolute;
-          top: 8px;
-          left: 15px;
+          top: 2px;
+          left: 5px;
+          width: 53px;
+          height: 53px;
+          border-radius: 53px;
+          background: #F5F5F5;
+          box-shadow: 3px 3px 3px rgba(116, 116, 116, 0.3);
         }
         span {
           display: block;
           position: absolute;
           width: 18px;
           height: 2px;
-          left: 6px;
+          left: 18px;
           background: #191919;
           -webkit-transition: 0.3s ease-in-out;
           -moz-transition: 0.3s ease-in-out;
           transition: 0.3s ease-in-out;
         }
         &__lineTop {
-          top: 10px;
+          top: 18px;
         }
         &__lineMiddle {
-          top: 20px;
+          top: 26px;
         }
         &__lineBottom {
-          top: 30px;
+          bottom: 17px;
         }
         //- ハンバーガーメニュー click時の動き
         &.active {
           .hamburger {
             &__lineTop {
-              top: 21px;
-              left: 6px;
+              top: 25px;
+              left: 18px;
               background: #191919;
               -webkit-transform: rotate(-45deg);
               -moz-transform: rotate(-45deg);
               transform: rotate(-45deg);
             }
             &__lineMiddle {
-              top: 21px;
+              top: 25px;
               background: #191919;
               -webkit-transform: rotate(45deg);
               -moz-transform: rotate(45deg);
               transform: rotate(45deg);
             }
             &__lineBottom {
-              top: 21px;
+              top: 25px;
               background: #191919;
               -webkit-transform: rotate(45deg);
               -moz-transform: rotate(45deg);
@@ -291,6 +296,10 @@ header {
         margin-right: 0;
         text-align: center;
         font-size: 2rem;
+      }
+
+      &.is-current {
+        text-decoration: underline;
       }
     }
   }

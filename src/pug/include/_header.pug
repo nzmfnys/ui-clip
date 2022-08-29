@@ -13,15 +13,31 @@
           
       .nav__inner
         .background-nav
+        -
+          var nav = {
+            about: {
+              url: "/about",
+              name: "About"
+            },
+            blog: {
+              url: "/blog",
+              name: "Blog"
+            },
+            books: {
+              url: "/books",
+              name: "Books"
+            }                    
+          };
+          function currentCheck(i){
+            if(i == page) 
+              return "is-current";
+            else
+              return "";
+          }        
         ul.header-inner__menu
-          li.header-inner__menu-item
-            a(href="/about") About
-          //- li.header-inner__menu-item 
-          //-   a(href="/") Category
-          li.header-inner__menu-item 
-            a(href="/") Blog
-          li.header-inner__menu-item 
-            a(href="/books") Books
+          - for(item in nav)
+            li(class=`header-inner__menu-item ${currentCheck(item)}`)
+              a(href=`${nav[item].url}`)= nav[item].name
           li.header-inner__menu-item.icons
             ul.icons-items
               li
