@@ -1137,7 +1137,7 @@ footer .footer-inner .copyright {
   margin-bottom: 2em;
 }
 
-.detail-contents__thumnail {
+.detail-contents__thumbnail {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -1145,7 +1145,7 @@ footer .footer-inner .copyright {
 }
 
 @media screen and (max-width: 767px) {
-  .detail-contents__thumnail {
+  .detail-contents__thumbnail {
     justify-content: space-between;
   }
 }
@@ -1163,7 +1163,7 @@ footer .footer-inner .copyright {
 
 .tag-items__item {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   justify-content: center;
   width: auto;
@@ -1192,25 +1192,25 @@ footer .footer-inner .copyright {
   font-size: 10px;
 }
 
-.contents-thumnail {
+.contents-thumbnail {
   margin-bottom: 1em;
   margin-right: 1em;
   max-width: 225px;
 }
 
 @media screen and (max-width: 767px) {
-  .contents-thumnail {
+  .contents-thumbnail {
     width: 48%;
     margin-right: 0;
   }
 }
 
-.contents-thumnail img {
+.contents-thumbnail img {
   width: 100%;
 }
 
 /*
-  トップモーダル
+  モーダルウィンドウ
 */
 .modal {
   display: none;
@@ -1382,4 +1382,8 @@ footer .footer-inner .copyright {
 
 .modal-close img {
   width: 100%;
+}
+
+.is-modal-open {
+  cursor: pointer;
 }

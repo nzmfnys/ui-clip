@@ -290,8 +290,8 @@
   &__tag {
   }
 
-  // .detail-contents__thumnail
-  &__thumnail {
+  // .detail-contents__thumbnail
+  &__thumbnail {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -319,7 +319,7 @@
   // .tag-items__items
   &__item {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     display: flex;
     justify-content: center;
     width: auto;
@@ -351,8 +351,8 @@
 }
 
 // サムネイルエリア
-// .contents-thumnail
-.contents-thumnail {
+// .contents-thumbnail
+.contents-thumbnail {
   margin-bottom: 1em;
   margin-right: 1em;
   max-width: 225px;
@@ -367,7 +367,7 @@
 }
 
 /*
-  トップモーダル
+  モーダルウィンドウ
 */
 .modal {
   display: none;
@@ -545,4 +545,8 @@
       width: 100%;
     }
   }
+}
+
+.is-modal-open {
+  cursor: pointer;
 }
