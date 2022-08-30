@@ -45,13 +45,14 @@ $(function(){
     if (w <= 767) {
       // スマホ向け（767px以下のとき）
       $('.slider-thumbnail').not('.slick-initialized').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         arrows: false,
         autoplay: false,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 1000,
         infinite: false,
         centerMode: false,
+        dots: true, 
       });
     } else {
       // PC向け
@@ -120,7 +121,9 @@ window.addEventListener("load", function() {
   モーダル表示時間に合わせて発火するように小細工
 */ 
 $(function(){
-  var slider = $('.slick-modal').slick();
+  var slider = $('.slick-modal').slick({
+    // オプションを追加時
+  });
   $('.is-modal-open').click(function(){
       slider.css('opacity',0);
       slider.animate({'z-index':1},100,function(){
@@ -129,7 +132,6 @@ $(function(){
       });
   });
 });
-
 
 // モーダルウィンドウの表示、非表示
 $(function(){
