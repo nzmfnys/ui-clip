@@ -400,20 +400,47 @@ header {
   &__buttons {
     display: flex;
     margin: 25px 0 60px;
+  }
 
-    // .about-content__buttons-twitter
+  // .about-content__button
+  &__button {
+    position: relative;
+    margin-right: 20px;
 
-    &-twitter {
-      margin-right: 10px;
+    .button-link{
+      position: relative;
+      z-index: 2;
+      height: 45px;
+      display: flex;
+      flex-direction: row;
+      padding: 10px 30px;
+      align-items: center;
+      background: #F5F5F5;
+      border-radius: 50px;
+      box-shadow: 3px 4px 3px rgba(222, 222, 222, 0.7);
     }
 
-
-    // .about-content__buttons-facebook
-
-    &-facebook {
-      
+    .background-button {
+      position: absolute;
+      z-index: 1;
+      background: #fff;
+      width: 100%;
+      height: 50px;
+      border-radius: 50px;
+      top: -5px;
+      right: 0;
     }
 
+    .button-text{
+      flex: 1 1 100%;
+      letter-spacing: 1px;
+    }
+
+    .button-image{
+      height: 9px;
+      height: 15px;
+      padding-right: 10px;
+    }
   }
 
   // .about-content__policy
@@ -523,13 +550,19 @@ footer {
 
         &-link {
           position: absolute;
-          background: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
           width: 50px;
           height: 50px;
+          padding-top: 5px;
+          padding-left: 5px;
           border-radius: 50px;
           border: 10px solid #fff;
+          background: #fff;
 
-          img {
+          .background-icon {
             position: absolute;
             left: -7px;
             top: -7px;
@@ -539,6 +572,21 @@ footer {
             border-radius: 50px;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
           }
+
+          img {
+            position: absolute;
+          }
+
+          .icon-twitter {
+            width: 18px;
+          }
+          .icon-facebook {
+            width: 10px;
+          }
+          .icon-rss {}
+          .icon-coffee {}
+
+
         }
 
         @include mq-up("sp") {

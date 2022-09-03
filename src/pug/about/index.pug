@@ -50,12 +50,16 @@ html(lang="ja")
             <br /> Twitter、facebookで更新情報を発信しています。
           
           ul.about-content__buttons
-            li.about-content__buttons-twitter
-              a(href="example.com")
-                img(src="/assets/common/btn-twitter.png" alt="twitter") 
-            li.about-content__buttons-facebook
-              a(href="example.com")
-                img(src="/assets/common/btn-facebook.png" alt="facebook")    
+            li.about-content__button
+              .background-button
+              a.button-link(href="example.com")
+                img.button-image(src="/assets/common/icon-twitter.svg" alt="Twitter")               
+                span.button-text Twitter 
+            li.about-content__button
+              .background-button
+              a.button-link(href="example.com")
+                img.button-image(src="/assets/common/icon-facebook.svg" alt="facebook") 
+                span.button-text Facebook                
 
           h3.about-content__heading-policy サイトポリシー  
           ul.about-content__policy
