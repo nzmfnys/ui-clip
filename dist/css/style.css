@@ -635,8 +635,16 @@ header {
   }
 }
 
-.header-inner__menu-item.is-current {
-  text-decoration: underline;
+@media screen and (min-width: 768px) {
+  .header-inner__menu-item.is-current:after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 35px;
+    height: 2px;
+    background: #191919;
+  }
 }
 
 .content__inner {

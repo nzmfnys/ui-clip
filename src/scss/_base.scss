@@ -298,7 +298,17 @@ header {
       }
 
       &.is-current {
-        text-decoration: underline;
+        @include mq-up("pc") {
+          &:after {
+            position: absolute;
+            bottom: 0;
+            display: block;
+            content: "";
+            width: 35px;
+            height: 2px;
+            background: #191919;
+          }
+        }
       }
     }
   }
