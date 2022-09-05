@@ -804,20 +804,27 @@ header {
 
 .books-content__books-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px 37px;
+  gap: 30px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .books-content__books-list {
+    justify-content: flex-start;
+    gap: 40px 37px;
+  }
 }
 
 .books-content__books-list-items {
+  flex: 1 1 196px;
   max-width: 196px;
   background-color: #fff;
 }
 
 @media screen and (max-width: 767px) {
   .books-content__books-list-items {
-    max-width: 145px;
-    margin-right: 0;
+    flex: 1 1 160px;
   }
 }
 
