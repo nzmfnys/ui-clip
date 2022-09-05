@@ -70,45 +70,14 @@ window.addEventListener("load", function() {
   
   /* 広告用のカルーセル PC/SP共通のため、↑のカルーセルと処理を分けた */
   $('.slick-add').slick({
-    autoplay: false,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    arrows:false,
-    swipe: false,
-    pauseOnFocus: false,
-    pauseOnHover: false,
     centerMode: true,
-    initialSlide: 0,
-    variableWidth: true, 
-    dots: true,
-    // centerMode: true,
-    infinite: true,
-    slidesToShow: 4,
-    centeredSlides: true,
-    loop: true,
-    loopAdditionalSlides: 1,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          centerMode: true,
         }
       }
     ]    
