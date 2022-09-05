@@ -47,55 +47,51 @@ html(lang="ja")
 
           .books-content__books
             ul.books-content__books-list
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-01.jpg" alt="books01" target="_blank")
-                p テキストテキストテキスト
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-02.jpg" alt="books02" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-03.jpg" alt="books03" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-04.jpg" alt="books04" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-01.jpg" alt="books01" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-02.jpg" alt="books02" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-03.jpg" alt="books03" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-04.jpg" alt="books04" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-01.jpg" alt="books01" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-02.jpg" alt="books02" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-03.jpg" alt="books03" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-04.jpg" alt="books04" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-01.jpg" alt="books01" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-02.jpg" alt="books02" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-03.jpg" alt="books03" target="_blank")
-              li.books-content__books-list-items
-                a(href="example.com")
-                  img(src="/assets/books/item-books-04.jpg" alt="books04" target="_blank")
+              -
+                var list = [
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-01.jpg',
+                    alt: 'books01',
+                    text: 'テキストテキスト'
+                  },
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-02.jpg',
+                    alt: 'books01',
+                    text: 'テキストテキストテキストテキストテキストテキストテキストテキスト'
+                  },
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-02.jpg',
+                    alt: 'books02',
+                    text: 'テキストテキストテキストテキスト'
+                  },
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-03.jpg',
+                    alt: 'books03',
+                    text: 'テキストテキストテキストテキストテキストテキスト'
+                  },                  
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-04.jpg',
+                    alt: 'books04',
+                    text: 'テキストテキストテキストテキストテキストテキストテキストテキスト'
+                  },                  
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-01.jpg',
+                    alt: 'books01',
+                    text: 'テキストテキスト'
+                  },                  
+
+                ]
+              each item in list
+                li.books-content__books-list-items
+                  a.book-link(href=item.link target="_blank")
+                    img.book-link__image(src=item.image alt="item.alt")
+                    p.book-link__text #{item.text}
 
           //-　Bannerエリア
           .advertisement-area__banner

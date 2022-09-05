@@ -490,28 +490,43 @@ header {
       padding-bottom: 90px;
     }
 
+    // .books-content__books-list
     &-list {
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
       flex-wrap: wrap;
+      gap: 40px 37px;
 
-      // .books-content__books-items
+      // .books-content__books-list-items
       &-items {
         max-width: 196px;
-        margin-bottom: 30px;
-        margin-right: 20px;
+        background-color: #fff;
 
         @include mq-up("sp") {
           max-width: 145px;
           margin-right: 0;
         }
 
-        img {
-          width: 100%;
+        .book-link {
+          display: block;
+
+          // .book-link__image
+          &__image {
+            width: 100%;
+          }
+
+          // .book-link__text
+          &__text {
+            height: auto;
+            padding: 0 15px 5px;
+            font-size: 12px;
+          }          
         }
       }
     }
   }
+
+
 }
 
 // フッター

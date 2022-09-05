@@ -804,14 +804,14 @@ header {
 
 .books-content__books-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 40px 37px;
 }
 
 .books-content__books-list-items {
   max-width: 196px;
-  margin-bottom: 30px;
-  margin-right: 20px;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 767px) {
@@ -821,8 +821,18 @@ header {
   }
 }
 
-.books-content__books-list-items img {
+.books-content__books-list-items .book-link {
+  display: block;
+}
+
+.books-content__books-list-items .book-link__image {
   width: 100%;
+}
+
+.books-content__books-list-items .book-link__text {
+  height: auto;
+  padding: 0 15px 5px;
+  font-size: 12px;
 }
 
 footer .footer-inner {
