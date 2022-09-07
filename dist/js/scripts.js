@@ -66,16 +66,20 @@ $(function(){
   checkBreakPoint();
 })
 
-window.addEventListener("load", function() {
+// window.addEventListener("load", function() {
   
+
+// });
+
   /* 広告用のカルーセル PC/SP共通のため、↑のカルーセルと処理を分けた */
   $('.slick-add').slick({
-    // centerMode: true,
     dots: true,
-    infinite: false,
-    centerMode: true,
-    variableWidth: true,
+    // infinite: false,
+    // variableWidth: true,
     // centerPadding: '5%',
+    slidesToShow: 7,
+    // variableWidth: true,
+    // adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 768,
@@ -87,7 +91,6 @@ window.addEventListener("load", function() {
       }
     ]    
   });
-});
 
 /*
   モーダル内のslick 

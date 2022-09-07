@@ -1092,7 +1092,6 @@ footer .footer-inner .copyright {
 }
 
 .advertisement-area .book-banner {
-  margin: 0 auto;
   background: red;
 }
 
@@ -1100,12 +1099,24 @@ footer .footer-inner .copyright {
   display: flex !important;
   flex-direction: column;
   align-items: center;
+}
+
+.advertisement-area .book-banner__inner {
   max-width: 180px;
+  margin: 15px;
+  background: #fff;
+}
+
+.advertisement-area .book-banner__image {
+  width: 100%;
 }
 
 .advertisement-area .book-banner__text {
-  font-size: 18px;
+  font-size: 12px;
   padding: 5px;
+  line-height: 1.2;
+  text-align: left;
+  display: inline-block;
 }
 
 .pagenation {
