@@ -1023,7 +1023,6 @@ footer .footer-inner .copyright {
 
 @media screen and (min-width: 768px) {
   .service-thumbnail__app-item {
-    max-width: 225px;
     cursor: pointer;
   }
   .service-thumbnail__app-item:hover {
@@ -1091,7 +1090,27 @@ footer .footer-inner .copyright {
   }
 }
 
+.advertisement-area__add-book {
+  position: relative;
+  width: 100vw;
+  padding: 45px 0 80px;
+  margin: 115px calc(50% - 50vw) 60px;
+  background: #F1F1F1;
+}
+
+.advertisement-area .book-title {
+  max-width: 1440px;
+  margin: 0 auto 30px;
+}
+
+.advertisement-area .book-title__text {
+  font-family: "Crimson Text", serif;
+  text-align: left;
+}
+
 .advertisement-area .book-banner {
+  max-width: 1440px;
+  margin: 0 auto;
   background: red;
 }
 
@@ -1117,6 +1136,43 @@ footer .footer-inner .copyright {
   line-height: 1.2;
   text-align: left;
   display: inline-block;
+}
+
+.advertisement-area .book-banner .slick-arrow::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  right: -20px;
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+  content: "";
+  border-top: 4px solid #aaa;
+  border-right: 4px solid #aaa;
+}
+
+.advertisement-area .book-banner .slick-prev::before {
+  transform: rotate(225deg);
+}
+
+.advertisement-area .book-banner .slick-next::before {
+  transform: rotate(45deg);
+}
+
+.advertisement-area .book-banner .slick-dots {
+  bottom: -40px;
+}
+
+.advertisement-area .book-banner .slick-dots li {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #CFCFCF;
+  overflow: hidden;
+}
+
+.advertisement-area .book-banner .slick-dots li button::before {
+  background: #191919;
 }
 
 .pagenation {

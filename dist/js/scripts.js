@@ -74,12 +74,8 @@ $(function(){
   /* 広告用のカルーセル PC/SP共通のため、↑のカルーセルと処理を分けた */
   $('.slick-add').slick({
     dots: true,
-    // infinite: false,
-    // variableWidth: true,
-    // centerPadding: '5%',
+    arrows: true,
     slidesToShow: 7,
-    // variableWidth: true,
-    // adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 768,
