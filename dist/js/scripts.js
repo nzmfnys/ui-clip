@@ -70,7 +70,12 @@ window.addEventListener("load", function() {
   
   /* 広告用のカルーセル PC/SP共通のため、↑のカルーセルと処理を分けた */
   $('.slick-add').slick({
+    // centerMode: true,
+    dots: true,
+    infinite: false,
     centerMode: true,
+    variableWidth: true,
+    // centerPadding: '5%',
     responsive: [
       {
         breakpoint: 768,

@@ -1091,110 +1091,21 @@ footer .footer-inner .copyright {
   }
 }
 
-.advertisement-area {
-  position: relative;
-  left: 50%;
-  width: 100vw;
-  margin: 120px 0;
-  transform: translateX(-50%);
-  overflow: hidden;
-  font-size: 30px;
+.advertisement-area .book-banner {
+  margin: 0 auto;
+  background: red;
 }
 
-.advertisement-area__add-book {
-  margin-bottom: 1em;
-  padding-bottom: 1.5em;
-  background-color: #f1f1f1;
-}
-
-.advertisement-area__banner {
-  padding: 1em 1em 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.advertisement-area img {
-  width: 100%;
-  max-width: 728px;
-}
-
-.book-title {
-  position: absolute;
-  top: 3%;
-  left: 5%;
-  margin-bottom: 1rem;
-}
-
-.book-title__text {
-  font-family: "Crimson Text", serif;
-  font-size: 22px;
-}
-
-.book-banner {
-  display: flex;
-  padding-top: 25px;
-}
-
-@media screen and (min-width: 768px) {
-  .book-banner {
-    padding: 25px 10px;
-  }
-}
-
-.book-banner__item {
-  width: 100%;
-  max-width: 180px;
-  margin: 0.2em;
-  background: #fff;
+.advertisement-area .book-banner__item {
   display: flex !important;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
+  max-width: 180px;
 }
 
-@media screen and (min-width: 768px) {
-  .book-banner__item {
-    margin: 0.2em 0.3em;
-  }
-}
-
-.book-banner__item-text {
-  padding: 0 0.5rem 0;
-  font-size: 0.8rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-align: left;
-}
-
-.banner-add {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .book-banner {
-    padding: 0 10%;
-    background: red;
-  }
-}
-
-.book-banner.slick-slider {
-  top: 30px !important;
-}
-
-@media screen and (min-width: 768px) {
-  .book-banner .slick-list {
-    padding: 0;
-  }
-}
-
-.slick-dots li {
-  margin: 0 !important;
-}
-
-.slick-dots li button::before {
-  font-size: 65px !important;
+.advertisement-area .book-banner__text {
+  font-size: 18px;
+  padding: 5px;
 }
 
 .pagenation {
@@ -1378,12 +1289,11 @@ footer .footer-inner .copyright {
 .modal-content__inner-app-information {
   max-width: 33%;
   height: 100vh;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-right: 10px;
+  padding-right: 30px;
   padding-left: 30px;
   background-color: #fff;
 }

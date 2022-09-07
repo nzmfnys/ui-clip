@@ -271,7 +271,7 @@ html(lang="ja")
                 .advertisement-area__add-book
                   .book-title
                     p.book-title__text Books
-                  ul.book-banner.slick-add
+                  .book-banner.slick-add
                     //- li.book-banner__item ddd
                     - 
                       var list = [
@@ -306,35 +306,35 @@ html(lang="ja")
                         {
                           altName: bookバナー8,
                           imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
+                        },     
+                      {
                           altName: bookバナー9,
                           imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
+                        },     
+                      {
                           altName: bookバナー10,
                           imgSrc: "/assets/common/add/banner-add-book01.png",
                         },
                         {
-                          altName: bookバナー11,
+                          altName: bookバナー7,
                           imgSrc: "/assets/common/add/banner-add-book01.png",
                         },
                         {
-                          altName: bookバナー12,
+                          altName: bookバナー8,
                           imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー13,
+                        },     
+                      {
+                          altName: bookバナー9,
                           imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー14,
+                        },     
+                      {
+                          altName: bookバナー10,
                           imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },                                                                                                                                    
+                        },                                                                                                                                                                                                                            
                       ]
                     each item in list
-                      li.book-banner__item
-                        img(src=item.imgSrc alt="item.altName" loading="lazy")
+                      .book-banner__item
+                        img.book-banner__image(src=item.imgSrc alt="item.altName" loading="lazy")
 
                 .advertisement-area__banner
                   img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
@@ -564,7 +564,7 @@ html(lang="ja")
               .advertisement-area__add-book
                 .book-title
                   p.book-title__text Books
-                ul.book-banner.slick-add
+                .book-banner.slick-add
                   //- li.book-banner__item ddd
                   - 
                     var list = [
@@ -601,9 +601,9 @@ html(lang="ja")
                                                                                                                     
                     ]
                   each item in list
-                    li.book-banner__item
-                      img(src=item.imgSrc alt="item.altName" loading="lazy")
-                      span.book-banner__item-text #{item.text}
+                    .book-banner__item
+                      img.book-banner__image(src=item.imgSrc alt="item.altName" loading="lazy")
+                      span.book-banner__text #{item.text}
 
               .advertisement-area__banner
                 img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
