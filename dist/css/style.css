@@ -1099,8 +1099,9 @@ footer .footer-inner .copyright {
 }
 
 .advertisement-area .book-title {
-  max-width: 1440px;
+  max-width: 1530px;
   margin: 0 auto 30px;
+  padding-left: 60px;
 }
 
 .advertisement-area .book-title__text {
@@ -1109,9 +1110,9 @@ footer .footer-inner .copyright {
 }
 
 .advertisement-area .book-banner {
-  max-width: 1440px;
+  max-width: 1530px;
   margin: 0 auto;
-  background: red;
+  padding: 0 45px;
 }
 
 .advertisement-area .book-banner__item {
@@ -1122,7 +1123,7 @@ footer .footer-inner .copyright {
 
 .advertisement-area .book-banner__inner {
   max-width: 180px;
-  margin: 15px;
+  margin: 15px 10px;
   background: #fff;
 }
 
@@ -1151,8 +1152,16 @@ footer .footer-inner .copyright {
   border-right: 4px solid #aaa;
 }
 
+.advertisement-area .book-banner .slick-prev {
+  left: 25px;
+}
+
 .advertisement-area .book-banner .slick-prev::before {
   transform: rotate(225deg);
+}
+
+.advertisement-area .book-banner .slick-next {
+  right: 15px;
 }
 
 .advertisement-area .book-banner .slick-next::before {
