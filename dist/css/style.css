@@ -1169,6 +1169,7 @@ footer .footer-inner .copyright {
 }
 
 .advertisement-area .book-banner .slick-dots {
+  position: static;
   bottom: -40px;
 }
 
