@@ -838,7 +838,7 @@ header {
 
 .books-content__books-list-items .book-link__text {
   height: auto;
-  padding: 0 15px 5px;
+  padding: 15px 15px 15px;
   font-size: 12px;
 }
 
@@ -1098,15 +1098,59 @@ footer .footer-inner .copyright {
   background: #F1F1F1;
 }
 
-.advertisement-area .book-title {
-  max-width: 1530px;
-  margin: 0 auto 30px;
-  padding-left: 60px;
+@media screen and (max-width: 767px) {
+  .advertisement-area__add-book {
+    padding: 35px 0 10px;
+  }
 }
 
-.advertisement-area .book-title__text {
+.advertisement-area__banner .banner-add {
+  width: 100%;
+  max-width: 728px;
+}
+
+.advertisement-area .book-header {
+  max-width: 1530px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .advertisement-area .book-header {
+    padding: 0 20px 0;
+    margin: 0;
+  }
+}
+
+.advertisement-area .book-header__title {
   font-family: "Crimson Text", serif;
   text-align: left;
+}
+
+.advertisement-area .book-header__link {
+  font-size: 16px;
+  color: #333333;
+}
+
+.advertisement-area .book-header__link-link {
+  display: flex;
+  align-items: center;
+}
+
+.advertisement-area .book-header__link-link::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  background-image: url("/assets/common/icon-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .advertisement-area .book-banner {
@@ -1115,10 +1159,22 @@ footer .footer-inner .copyright {
   padding: 0 45px;
 }
 
+@media screen and (max-width: 767px) {
+  .advertisement-area .book-banner {
+    padding: 0;
+  }
+}
+
 .advertisement-area .book-banner__item {
   display: flex !important;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .advertisement-area .book-banner__item {
+    width: auto !important;
+  }
 }
 
 .advertisement-area .book-banner__inner {
@@ -1139,17 +1195,33 @@ footer .footer-inner .copyright {
   display: inline-block;
 }
 
+@media screen and (max-width: 767px) {
+  .advertisement-area .book-banner .slick-list {
+    padding: 0 !important;
+  }
+}
+
 .advertisement-area .book-banner .slick-arrow::before {
   content: '';
   position: absolute;
   top: -15px;
   right: -20px;
   margin-right: 20px;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   content: "";
   border-top: 4px solid #aaa;
   border-right: 4px solid #aaa;
+}
+
+@media screen and (max-width: 767px) {
+  .advertisement-area .book-banner .slick-arrow::before {
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    border-top: 3px solid #aaa;
+    border-right: 3px solid #aaa;
+  }
 }
 
 .advertisement-area .book-banner .slick-prev {
@@ -1160,12 +1232,26 @@ footer .footer-inner .copyright {
   transform: rotate(225deg);
 }
 
+@media screen and (max-width: 767px) {
+  .advertisement-area .book-banner .slick-prev {
+    top: 100%;
+    left: 15px;
+  }
+}
+
 .advertisement-area .book-banner .slick-next {
   right: 15px;
 }
 
 .advertisement-area .book-banner .slick-next::before {
   transform: rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .advertisement-area .book-banner .slick-next {
+    top: 100%;
+    right: 20px;
+  }
 }
 
 .advertisement-area .book-banner .slick-dots {
@@ -1393,7 +1479,6 @@ footer .footer-inner .copyright {
   z-index: 1;
   display: flex;
   justify-content: center;
-  flex-grow: 1;
   margin: 5px 10px 5px 0;
   padding: 10px 20px;
   background: #F7F7F7;

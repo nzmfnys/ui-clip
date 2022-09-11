@@ -175,47 +175,10 @@ html(lang="ja")
                             span.list-item タグが入ります   
                           li.app-information__tags-list-item         
                             span.list-item タグが入ります
-          //-　AmazonBannerエリア
-          .advertisement-area 
-              .advertisement-area__add-book
-                .book-title
-                  p.book-title__text Books
-                ul.book-banner.slick-add
-                  //- li.book-banner__item ddd
-                  - 
-                    var list = [
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                      },
-                                                                                                                    
-                    ]
-                  each item in list
-                    li.book-banner__item
-                      img(src=item.imgSrc alt="item.altName" loading="lazy")
 
-              .advertisement-area__banner
-                img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
 
     //- footer (SNS、コピーライト)
     //- script もfooterの中に記述 

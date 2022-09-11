@@ -52,7 +52,7 @@ $(function(){
         autoplaySpeed: 1000,
         infinite: false,
         centerMode: false,
-        dots: true, 
+        dots: false, 
       });
     } else {
       // PC向け
@@ -81,8 +81,9 @@ $(function(){
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          // slidesToScroll: 1,
           centerMode: true,
+          // infinite: true,
         }
       }
     ]    

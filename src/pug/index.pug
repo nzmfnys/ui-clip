@@ -266,103 +266,8 @@ html(lang="ja")
                   li.service-thumbnail__app-item
                     img(src=item.imgSrc alt="item.altName" loading="lazy")   
 
-              //-　AmazonBannerエリア
-              .advertisement-area 
-                .advertisement-area__add-book
-                  .book-title
-                    p.book-title__text Books
-                  .book-banner.slick-add
-                    //- li.book-banner__item ddd
-                    - 
-                      var list = [
-                        {
-                          altName: bookバナー1,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                          text: "テキストテキストテキストテキスト",
-                          link: "https://google.com",
-                        },
-                        {
-                          altName: bookバナー2,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                          text: "テキストテキストテキストテキスト",
-                          link: "https://yahoo.com",
-                        },
-                        {
-                          altName: bookバナー3,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                          text: "テキストテキストテキストテキスト",
-                          link: "https://yahoo.com",
-                        },
-                        {
-                          altName: bookバナー4,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                          text: "テキストテキストテキストテキスト",
-                          link: "https://google.com",
-                        },
-                        {
-                          altName: bookバナー5,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                          text: "テキストテキストテキストテキスト",
-                          link: "https://google.com",
-                        },
-                        {
-                          altName: bookバナー6,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                          text: "テキストテキストテキストテキスト",
-                          link: "https://google.com",
-                        },
-                        {
-                          altName: bookバナー7,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                          text: "テキストテキストテキストテキスト",
-                          link: "https://google.com",
-                        },
-                        {
-                          altName: bookバナー8,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                          text: "テキストテキストテキストテキスト",
-                          link: "https://google.com",
-                        },     
-                      {
-                          altName: bookバナー9,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                          text: "テキストテキストテキストテキスト",
-                          link: "https://google.com",
-                        },     
-                      {
-                          altName: bookバナー10,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                          text: "テキストテキストテキストテキスト",
-                          link: "https://google.com",
-                        },
-                        {
-                          altName: bookバナー7,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                          text: "テキストテキストテキストテキスト",
-                          link: "https://google.com",
-                        },
-                      //-   {
-                      //-     altName: bookバナー8,
-                      //-     imgSrc: "/assets/common/add/banner-add-book01.png",
-                      //-   },     
-                      //- {
-                      //-     altName: bookバナー9,
-                      //-     imgSrc: "/assets/common/add/banner-add-book01.png",
-                      //-   },     
-                      //- {
-                      //-     altName: bookバナー10,
-                      //-     imgSrc: "/assets/common/add/banner-add-book01.png",
-                      //-   },                                                                                                                                                                                                                            
-                      ]
-                    each item in list
-                      .book-banner__item
-                        a.book-banner__inner(href=item.link target="_blank")
-                          //- img.book-banner__image(src=item.imgSrc alt="item.altName" loading="lazy")
-                          img.book-banner__image(src=item.imgSrc alt="item.altName")
-                          span.book-banner__text #{item.text}
-
-                .advertisement-area__banner
-                  img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
+            //-　AmazonBannerエリア
+            include include/_TheBooksBanner
 
             //-　GOサービス情報
             .tab-contents__item-inner
@@ -408,7 +313,7 @@ html(lang="ja")
                   li.service-thumbnail__app-item
                     img(src=item.imgSrc alt="item.altName" loading="lazy")        
 
-            //-　GOサービス情報
+            //-　S.RIDEサービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
@@ -585,53 +490,7 @@ html(lang="ja")
                     img(src=item.imgSrc alt="item.altName" loading="lazy")
                       
             //-　AmazonBannerエリア
-            .advertisement-area 
-              .advertisement-area__add-book
-                .book-title
-                  p.book-title__text Books
-                .book-banner.slick-add
-                  //- li.book-banner__item ddd
-                  - 
-                    var list = [
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテスト",
-                      },
-                                                                                                                    
-                    ]
-                  each item in list
-                    .book-banner__item
-                      img.book-banner__image(src=item.imgSrc alt="item.altName" loading="lazy")
-                      span.book-banner__text #{item.text}
-
-              .advertisement-area__banner
-                img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
+            include include/_TheBooksBanner
 
     //- footer (SNS、コピーライト)
     //- script もfooterの中に記述
