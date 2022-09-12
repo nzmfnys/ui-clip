@@ -1017,7 +1017,7 @@ footer .footer-inner .copyright {
     font-size: 20px;
     color: #333333;
     background: rgba(255, 255, 255, 0.9);
-    border-radius: 13px;
+    border-radius: 8px;
   }
 }
 
@@ -1385,7 +1385,7 @@ footer .footer-inner .copyright {
 }
 
 /*
-  モーダルウィンドウ
+  APP詳細モーダルウィンドウ
 */
 .modal {
   display: none;
@@ -1604,5 +1604,62 @@ footer .footer-inner .copyright {
   background-image: url(/assets/common/icon-arrow.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.pagination__back-ground {
+  position: relative;
+  width: 40px;
+  height: 37px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 6px 5px 3px rgba(222, 222, 222, 0.7);
+}
+
+.pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__text {
+  font-size: 14px;
+}
+
+.pagination__image {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  padding: 10px;
+  background: #F5F5F5;
+  border-radius: 5px;
+}
+
+.pagination__image.is-last-arrow {
+  transform: rotate(180deg);
+}
+
+.pagination__inside {
+  display: flex;
+  align-items: center;
+  margin: 8px 10px 0 25px;
+}
+
+.pagination__inside.is-next {
+  margin: 8px 20px 0 10px;
+}
+
+.pagination__inside-image {
+  margin: 0 10px;
+}
+
+.pagination__inside-image.is-back {
   transform: rotate(180deg);
 }
