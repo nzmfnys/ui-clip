@@ -1093,7 +1093,7 @@ footer .footer-inner .copyright {
 .advertisement-area__add-book {
   position: relative;
   width: 100vw;
-  padding: 45px 0 80px;
+  padding: 45px 0 10px;
   margin: 115px calc(50% - 50vw) 60px;
   background: #F1F1F1;
 }
@@ -1130,6 +1130,7 @@ footer .footer-inner .copyright {
 .advertisement-area .book-header__title {
   font-family: "Crimson Text", serif;
   text-align: left;
+  font-size: 30px;
 }
 
 .advertisement-area .book-header__link {
@@ -1558,4 +1559,49 @@ footer .footer-inner .copyright {
 
 .is-modal-open {
   cursor: pointer;
+}
+
+.back-button {
+  position: relative;
+  max-width: 280px;
+  margin: 70px auto 100px;
+}
+
+.back-button__background {
+  position: absolute;
+  z-index: 0;
+  background: #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  top: -4px;
+  right: 4px;
+}
+
+.back-button__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background: #F7F7F7;
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  height: 44px;
+}
+
+.back-button__button:before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  background-image: url(/assets/common/icon-arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
 }
